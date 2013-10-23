@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load fb_versions %}
+{% version model.field_name version_prefix %}
+{%block title%}
+    <title>Requery | Posts </title>
+    <meta name="description" content="Posts" />
+{%endblock%}
+
+    {% block pagetitle %}
+   <div class="row workspace">
+	<ol class="breadcrumb">
+	  <li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>
+	  <li></span><a href="/posts"> Timeline </a></li>
+	  <li></span><a href="/posts/type/{{ type }}">  {{ type }} </a></li>
+	  <li class="active">  {{ post.title }} </li>
+
+	</ol>	   
+</div>
+    {% endblock %}
+
+    {% block allcontent %}
+    <div class="row workspace ">
+	
+		
+			{% if posts %}
+				{% for post in posts %}
+		<div class="worklist">
+
+					<div class="worklisttext"><h3> <span class="glyphicon glyphicon-file"></span><a href="/posts/{{ post.slug }}/">  {{ post.title }}</a>  <small> {{ post.publish_at }} </small> </h3>
+					   
+					{{ post.excerpt|safe}}</div>
+			
+					<a href="/posts/{{ post.slug }}/"> <div class="worklistimg"><img src="{% version post.image 'medium' %}"  alt="{{ post.slug }}" /></div></a>
+
+		</div>	<br /><br />
+	
+
+	 			{% endfor %}
+			{% endif %}
+		
+    {% endblock %}
+

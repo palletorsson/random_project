@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load fb_versions %}
+{% version model.field_name version_prefix %}
+
+{%block title%}
+    <title>CodeCulture | Home </title>
+    <meta name="description" content="Posts" />
+{%endblock%}
+
+{% block extra_head %}
+	<link href="{{ STATIC_URL }}css/timeline.css" rel="stylesheet">
+{% endblock %}
+
+    {% block pagetitle %}
+   
+    {% endblock %}
+
+{% block allcontent %}
+
+  	  
+	<div class="row workspace">
+		<ol class="breadcrumb">
+			<li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>	
+		</ol>
+	</div>	   
+
+	<div class="row workspace">
+		<div class="timeline">
+                	<div class="long">    <div class="line_vertinal label label-success" style=";left:{{ today }}px;">Today<div class="timeline_line"></div></div>
+                        <div class="timeline_horisontal_cel_year">2012</div><div class="timeline_horisontal_cel_year">2013</div><div class="timeline_horisontal_cel_year">2014</div>
+                    </div>
+                        <div style="clear: both;"></div>
+				
+				<div class="long">
+						<div class="timeline_horisontal_cel_name">Jan</div>
+						<div class="timeline_horisontal_cel_num">Feb</div>
+						<div class="timeline_horisontal_cel_name">Mars</div>
+						<div class="timeline_horisontal_cel_num">April</div>
+						<div class="timeline_horisontal_cel_name">March</div>
+						<div class="timeline_horisontal_cel_num">Juni</div>
+						<div class="timeline_horisontal_cel_name">July</div>
+						<div class="timeline_horisontal_cel_name">Aug</div>
+						<div class="timeline_horisontal_cel_num">Sep</div>
+						<div class="timeline_horisontal_cel_name">Oct</div>
+						<div class="timeline_horisontal_cel_num">Nov</div>
+						<div class="timeline_horisontal_cel_name">Dec</div>
+						<div class="timeline_horisontal_cel_name">Jan</div>
+						<div class="timeline_horisontal_cel_num">Feb</div>
+						<div class="timeline_horisontal_cel_name">Mars</div>
+						<div class="timeline_horisontal_cel_num">April</div>
+						<div class="timeline_horisontal_cel_name">March</div>
+						<div class="timeline_horisontal_cel_num">Juni</div>
+						<div class="timeline_horisontal_cel_name">July</div>
+						<div class="timeline_horisontal_cel_name">Aug</div>
+						<div class="timeline_horisontal_cel_num">Sep</div>
+						<div class="timeline_horisontal_cel_name">Oct</div>
+						<div class="timeline_horisontal_cel_num">Nov</div>
+						<div class="timeline_horisontal_cel_name">Dec</div>		
+						<div class="timeline_horisontal_cel_name">Jan</div>
+						<div class="timeline_horisontal_cel_num">Feb</div>
+						<div class="timeline_horisontal_cel_name">Mars</div>
+						<div class="timeline_horisontal_cel_num">April</div>
+						<div class="timeline_horisontal_cel_name">March</div>
+						<div class="timeline_horisontal_cel_num">Juni</div>
+						<div class="timeline_horisontal_cel_name">July</div>
+						<div class="timeline_horisontal_cel_name">Aug</div>;
+						<div class="timeline_horisontal_cel_num">Sep</div>
+						<div class="timeline_horisontal_cel_name">Oct</div>
+						<div class="timeline_horisontal_cel_num">Nov</div>
+						<div class="timeline_horisontal_cel_name">Dec</div>	
+				</div>
+<div class="timeline_content">
+<div class="timeline_label">
+    {% for p in posts %}
+
+	<div class="label label-success" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:20px;">{{ p.title }} <div class="timeline_line"></div></div>
+    <div class="" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:70px;"><a href="/posts/{{ p.slug }}/"> <div><img class="timeline_img" src="{% version p.image 'medium' %}"  alt="{{ p.slug }}" /></div></a></div>
+
+    {% endfor %}
+
+		</div>
+    </div>
+            <div class="timeline_media">
+
+
+		</div>
+
+		</div>
+
+	</div>
+
+    {% endblock %}

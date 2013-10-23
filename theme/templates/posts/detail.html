@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load fb_versions %}
+{%block title%}
+    <title>requrey | {% trans "Nyheter och Blog" %} | {{ post.title }} </title>
+    <meta name="description" content=" Requery {{ post.title }}" />
+{%endblock%}
+{% block extra_head %}
+
+{% endblock %}
+
+
+{% block pagetitle %}
+{% endblock %}
+{% block allcontent %}
+
+{% if post %}
+
+<div class="row workspace">
+	<ol class="breadcrumb">
+	  <li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>
+	  <li><a href="/posts"> Posts </a></li>
+	  <li><a href="/posts/type/{{ post.type }}"> {{ post.type }}</a></li>
+	  <li class="active"> {{ post.title }} </li>
+	</ol>	   
+</div>
+<div class="row workspace">
+	<div class="pull-right date"><small> Last update: ( {{ post.publish_at }} )</small> </div>
+  		<span id="post_id" class="hidden">{{ post.pk }} </span>
+
+  			<div class="col-xs-12 col-sm-6 col-md-8 work"> {{ post.the_text|safe }} </div>
+  				<div class="col-xs-6 col-sm-6 col-md-4 notes">
+    				<div class="related_outer">
+
+   	 				</div>
+  				</div>
+			</div>
+<div class="comment_body">
+
+</div>
+<div class="tags">
+    {% if tag in post.tags.all %}
+    {{ tag }} {% if not forloop.last %}, {% endif %}
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}
+    

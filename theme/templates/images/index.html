@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{%block title%}
+    <title>Requery | Posts </title>
+    <meta name="description" content="Posts" />
+{%endblock%}
+
+<div class="row workspace">
+	<ol class="breadcrumb">
+	  <li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>
+	  <li><span class="glyphicon glyphicon-file"></span><a href="/images"> Posts</a></li>
+	  <li class="active">  {{ images_collection.name }} </li>
+	</ol>	   
+</div>
+
+    {% block allcontent %}
+
+    <hr/> 
+    <div class="row workspace">
+    	{% if images_collection %}
+		    {% for img_col in images_collection %}
+		         <a href="{{ img_col.slug }}"> {{ img_col.slug }} </a>
+		    {% endfor %}
+        {% endif %}
+            </div>
+    {% endblock %}

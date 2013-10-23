@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{%block title%}
+    <title>Requery | Posts </title>
+    <meta name="description" content="Posts" />
+{%endblock%}
+
+    {% block pagetitle %}
+    <div class="row workspace">
+	<ol class="breadcrumb">
+	  <li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>
+	  <li><span class="glyphicon glyphicon-file"></span><a href="/images"> Images </a></li>
+	  <li class="active">  {{ the_collection.name }} </li>
+	</ol>	   
+</div>
+    {% endblock %}
+
+    {% block allcontent %}
+
+    <div class="row workspace">
+			<div class="content span2">  <legend>{{ the_collection.name }}  </legend></div>
+			<div class="content span6">
+				<div id="carousel-id" class="carousel slide">
+					<div class="carousel-inner">
+						{% if image_collection %}
+							{% for img in image_collection %}
+								{% if forloop.first %} 
+								 <div class="item active"><img src="/media/{{ img.image }}" /></a></div>
+								{% else %}
+	 							<div class="item"><img src="/media/{{ img.image }}" /></a></div>
+								{% endif %}
+						{% endfor %}
+					{% endif %}
+					</div>
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-id" data-slide="prev">
+					<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-id" data-slide="next">
+					<span class="icon-next"></span>
+					</a>
+				</div>
+			</div>
+	</div>
+    {% endblock %}
+

@@ -1,0 +1,67 @@
+
+.timeline_horisontal_cel_name, .timeline_horisontal_cel_num {
+	width:70px;
+	height:5px;
+	border-left: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	float:left; 
+}
+
+.timeline_horisontal_cel_year {
+	width:840px;
+	height:20px;
+	float:left;
+}
+
+
+.timeline {
+	overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.line_vertinal {
+    display:block;
+    position:relative;
+    top:20px;
+    width:2px;
+    height:20px;
+}
+
+.timeline_label {
+	height:160px;
+	width:2540px;
+}
+.timeline_media {
+	height:400px;
+	width:2540px;
+}
+
+.label{
+
+	color:black;
+}
+
+.long {
+    width:2540px;
+}
+
+.timeline_line {
+    background-color:black;
+    width:2px;
+    height:30px;
+}
+
+.timeline_img  {
+    width:200px;
+    margin:10px;
+    position:relative;
+    left:-100px;
+    border: 1px solid pink;
+}
+.line {
+    width:2px;
+    background-color: #5cb85c;
+    white-space: nowrap;
+    border-radius: .25em;
+}

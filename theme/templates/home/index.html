@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load fb_versions %}
+{% version model.field_name version_prefix %}
+
+{%block title%}
+    <title>CodeCulture| Home </title>
+    <meta name="description" content="Posts" />
+{%endblock%}
+
+    {% block pagetitle %}
+   
+    {% endblock %}
+
+{% block allcontent %}
+
+  	  
+	<div class="row workspace">
+		<ol class="breadcrumb">
+			<li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>	
+		</ol>
+	</div>	   
+
+	<div class="row workspace">
+		<div class="row mainspace">
+			{% for post in posts %}
+			<div class="homework">		
+					<a href="/posts/{{ post.slug }}">
+					<img src="{% version post.image 'medium' %}"  alt="{{ post.slug }}" /> 
+				<div class="homeworktext ">								
+						<h4> <span class="glyphicon glyphicon-file"></span> {{ post.title }} </h4>
+						</a>
+			
+						<div class="data"><small> Last update:  {{ post.publish_at }}</small></div>
+						<div class="type"> In: <a href="/posts/type/{{ post.type }}/">{{ post.type }}</a>   </div> 			
+			</div>				
+					
+	</div>				
+	{% endfor %}			
+		</div>
+	</div>		
+
+    {% endblock %}
