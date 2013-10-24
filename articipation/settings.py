@@ -13,12 +13,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
-    'default': {
-        'ENGINE': '', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-    }
-}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -204,7 +198,7 @@ LOGGING = {
     }
 }
 
-##GRAPPELLI_ADMIN_TITLE = 'Workmode Admin'
+##GRAPPELLI_ADMIN_TITLE = 'Articipation Admin'
 
 # sessions# Cookie name. This can be whatever you want.
 SESSION_COOKIE_NAME = 'sessionid'
