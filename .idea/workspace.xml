@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7a1b7e-8acb-46ea-9f5b-9a540403b56b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/views.py" afterPath="$PROJECT_DIR$/home/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/templates/posts/timeline.html" afterPath="$PROJECT_DIR$/theme/templates/posts/timeline.html" />
     </list>
     <ignored path="articipation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,18 +28,38 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/home/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-26.375" vertical-offset="117" max-vertical-offset="840">
+            <state line="40" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="-20.125" vertical-offset="117" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="498" selection-end="498" vertical-scroll-proportion="0.37117904" vertical-offset="0" max-vertical-offset="687">
+            <state line="17" column="4" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="8" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-25.833334" vertical-offset="370" max-vertical-offset="1515">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timeline.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/theme/templates/posts/timeline.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="4" selection-start="3881" selection-end="3881" vertical-scroll-proportion="0.9307692" vertical-offset="670" max-vertical-offset="1560">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +83,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/theme/templates/home/index.html" />
         <option value="$PROJECT_DIR$/home/views.py" />
+        <option value="$PROJECT_DIR$/theme/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/theme/templates/posts/timeline.html" />
       </list>
     </option>
   </component>
@@ -169,6 +189,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articipation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articipation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articipation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articipation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -245,18 +309,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/theme/templates/home/index.html">
+    <entry file="file://$PROJECT_DIR$/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-26.375" vertical-offset="117" max-vertical-offset="840">
+        <state line="17" column="4" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="8" selection-start="2132" selection-end="2132" vertical-scroll-proportion="-25.833334" vertical-offset="370" max-vertical-offset="1515">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/views.py">
+    <entry file="file://$PROJECT_DIR$/theme/templates/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="498" selection-end="498" vertical-scroll-proportion="0.37117904" vertical-offset="0" max-vertical-offset="687">
+        <state line="40" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="-20.125" vertical-offset="117" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/posts/timeline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="4" selection-start="3881" selection-end="3881" vertical-scroll-proportion="0.9307692" vertical-offset="670" max-vertical-offset="1560">
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

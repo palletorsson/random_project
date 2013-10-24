@@ -71,13 +71,19 @@
 				</div>
 <div class="timeline_content">
 <div class="timeline_label">
-    {% for p in posts %}
+    {% if posts %}
 
-	<div class="label label-success" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:20px;">{{ p.title }} <div class="timeline_line"></div></div>
-    <div class="" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:70px;"><a href="/posts/{{ p.slug }}/"> <div><img class="timeline_img" src="{% version p.image 'medium' %}"  alt="{{ p.slug }}" /></div></a></div>
+        {% for p in posts %}
 
-    {% endfor %}
+        <div class="label label-success" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:20px;">{{ p.title }} <div class="timeline_line"></div></div>
+        <div class="" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:70px;"><a href="/posts/{{ p.slug }}/"> <div><img class="timeline_img" src="{% version p.image 'medium' %}"  alt="{{ p.slug }}" /></div></a></div>
 
+        {% endfor %}
+    {% else %}
+        <div class="homework">
+            You need to add stuff
+        </div>
+    {% endif %}
 		</div>
     </div>
             <div class="timeline_media">
