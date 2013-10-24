@@ -50,7 +50,6 @@ def timeline(request, key):
         print posts[i].days_ago
         i = i + 1
 
-    print posts[0].days_ago
 
     return render_to_response('posts/timeline.html', {
         'posts': posts,
