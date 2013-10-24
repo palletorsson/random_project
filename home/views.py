@@ -7,7 +7,10 @@ from posts.models import Post
 
 def first_page(request):
     home = Home.objects.get(pk=1)
-    collection = ImageCollection.objects.get(pk=1)
+    try:
+        collection = ImageCollection.objects.get(pk=1)
+    except:
+        collection = 'no colletion'
     images = Image.objects.get(pk=1)
     posts = Post.objects.filter(active=True)
     cases = Post.objects.filter(type='Cases')
