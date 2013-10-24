@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7a1b7e-8acb-46ea-9f5b-9a540403b56b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/templates/posts/detail.html" afterPath="$PROJECT_DIR$/theme/templates/posts/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articipation/settings.py" afterPath="$PROJECT_DIR$/articipation/settings.py" />
     </list>
     <ignored path="articipation.iws" />
@@ -76,7 +75,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/articipation/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="5" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.6344411" vertical-offset="1815" max-vertical-offset="3435">
+            <state line="150" column="4" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.6570997" vertical-offset="1815" max-vertical-offset="3435">
               <folding />
             </state>
           </provider>
@@ -554,7 +553,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/articipation/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="5" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.6344411" vertical-offset="1815" max-vertical-offset="3435">
+        <state line="150" column="4" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.6570997" vertical-offset="1815" max-vertical-offset="3435">
           <folding />
         </state>
       </provider>

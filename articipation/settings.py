@@ -148,7 +148,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     #'disqus',
-    #'threadedcomments',
+    'threadedcomments',
     'django.contrib.comments',
     'django.contrib.messages',
     'django.contrib.staticfiles',
