@@ -17,6 +17,15 @@ TYPE_OF_POST = (
     ('Pages', 'Pages'),
     )
 
+PROCESS = (
+    ('Initiated', 'Initiated'),
+    ('Completed', 'Completed'),
+    ('Documented', 'Documented'),
+    ('Reported', 'Reported'),
+    ('Postprocess', 'Postprocess'),
+    )
+
+
 class PostManager(models.Manager):
     def get_visible(self):
         return self.get_query_set().filter(publish_at__lte=datetime.datetime.now(), active=True)
@@ -56,6 +65,7 @@ class Post(models.Model):
     #tags = TaggableManager()
     blog = models.ForeignKey(Blog, help_text="What blog does the post belong to?", related_name="posts")
     type = models.CharField(max_length=40, choices=TYPE_OF_POST)
+    process = models.CharField(max_length=12, choices=PROCESS)
 
     class Meta:
         ordering = ['-publish_at',]
@@ -63,3 +73,19 @@ class Post(models.Model):
 
     def __unicode__(self):
         return u'%s' %self.title
+
+    def process_procent(self):
+        if (self.process == 'Initiated'):
+            procent = 10
+        elif (self.process == 'Completed'):
+            procent = 50
+        elif (self.process == 'Documented'):
+            procent = 70
+        elif (self.process == 'Reported'):
+            procent = 90
+        elif (self.process == 'Postprocess'):
+            procent = 100
+        else:
+            procent = 0
+
+        return procent
