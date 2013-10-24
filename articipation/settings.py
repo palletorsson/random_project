@@ -147,7 +147,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'disqus',
+    #'disqus',
     #'threadedcomments',
     'django.contrib.comments',
     'django.contrib.messages',

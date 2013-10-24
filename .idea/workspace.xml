@@ -55,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/posts/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="4" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.9529781" vertical-offset="172" max-vertical-offset="1020">
+            <state line="52" column="0" selection-start="1964" selection-end="1964" vertical-scroll-proportion="-25.333334" vertical-offset="172" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/articipation/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="5" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.0" vertical-offset="1815" max-vertical-offset="3435">
+            <state line="149" column="5" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.6344411" vertical-offset="1815" max-vertical-offset="3435">
               <folding />
             </state>
           </provider>
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/theme/templates/home/index.html" />
         <option value="$PROJECT_DIR$/home/views.py" />
-        <option value="$PROJECT_DIR$/articipation/settings.py" />
         <option value="$PROJECT_DIR$/theme/templates/posts/detail.html" />
+        <option value="$PROJECT_DIR$/articipation/settings.py" />
       </list>
     </option>
   </component>
@@ -538,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articipation/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="5" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.0" vertical-offset="1815" max-vertical-offset="3435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="4" selection-start="60" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
@@ -554,7 +547,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/templates/posts/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="4" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.9529781" vertical-offset="172" max-vertical-offset="1020">
+        <state line="52" column="0" selection-start="1964" selection-end="1964" vertical-scroll-proportion="-25.333334" vertical-offset="172" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articipation/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="5" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.6344411" vertical-offset="1815" max-vertical-offset="3435">
           <folding />
         </state>
       </provider>
