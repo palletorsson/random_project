@@ -11,7 +11,11 @@ def first_page(request):
         collection = ImageCollection.objects.get(pk=1)
     except:
         collection = 'no colletion'
-    images = Image.objects.get(pk=1)
+    try:
+        images = Image.objects.get(pk=1)
+    except:
+        images = 'no images'
+    
     posts = Post.objects.filter(active=True)
     cases = Post.objects.filter(type='Cases')
     projects = Post.objects.filter(type='Projects')
