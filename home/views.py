@@ -6,7 +6,11 @@ from images.models import Image, ImageCollection
 from posts.models import Post
 
 def first_page(request):
-    home = Home.objects.get(pk=1)
+    try:
+        home = Home.objects.filter(welcome_title='Articipation')
+    except:
+        home = 'no home'
+
     try:
         collection = ImageCollection.objects.get(pk=1)
     except:
@@ -15,7 +19,7 @@ def first_page(request):
         images = Image.objects.get(pk=1)
     except:
         images = 'no images'
-    
+
     posts = Post.objects.filter(active=True)
     cases = Post.objects.filter(type='Cases')
     projects = Post.objects.filter(type='Projects')
