@@ -22,6 +22,8 @@
 
 	<div class="row workspace">
 		<div class="row mainspace">
+            {% if posts %}
+
 			{% for post in posts %}
 			<div class="homework">		
 					<a href="/posts/{{ post.slug }}">
@@ -32,10 +34,16 @@
 			
 						<div class="data"><small> Last update:  {{ post.publish_at }}</small></div>
 						<div class="type"> In: <a href="/posts/type/{{ post.type }}/">{{ post.type }}</a>   </div> 			
-			</div>				
-					
-	</div>				
-	{% endfor %}			
+			    </div>
+
+	        </div>
+	        {% endfor %}
+
+          {% else %}
+			<div class="homework">
+			    You need to add stuff
+			</div>
+             {% endif %}
 		</div>
 	</div>		
 
