@@ -66,7 +66,8 @@ class Post(models.Model):
     blog = models.ForeignKey(Blog, help_text="What blog does the post belong to?", related_name="posts")
     type = models.CharField(max_length=40, choices=TYPE_OF_POST)
     process = models.CharField(max_length=12, choices=PROCESS)
-
+    credits = models.TextField(blank=True, null=True)
+    
     class Meta:
         ordering = ['-publish_at',]
         verbose_name_plural = 'posts'
