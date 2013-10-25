@@ -106,7 +106,7 @@ class Section(models.Model):
     title = models.CharField(max_length=255, help_text="Title if the post. Can be anything up to 255 characters.", blank=True, null=True)
     level = models.CharField(max_length=12, choices=HEADING, help_text="Does the title have head style", default="h2", blank=True, null=True)
     body = models.TextField()
-    post = models.ForeignKey(Post, help_text="What post does the paragraf belong to?", related_name="paragraf")
+    post = models.ForeignKey(Post, help_text="What post does the paragraf belong to?", related_name="selection")
 
 
     def __unicode__(self):

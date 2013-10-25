@@ -31,4 +31,4 @@ class Related(models.Model):
 
 
     def __unicode__(self):
-        return u'Related to %s and anchor: %s' % (self.post, self.anchor)
+        return u'Related to %s and anchor: %s' % (self.section, self.anchor)
