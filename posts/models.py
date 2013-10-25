@@ -52,6 +52,8 @@ class Post(models.Model):
     excerpt = models.TextField()
     html_text = tinymce_models.HTMLField()
     the_text = models.TextField()
+    simple_text = models.BooleanField(default=False,
+                help_text="is the post on build by text and not build by sections")
     image = FileBrowseField("Image", max_length=200, directory="images/", extensions=[".jpg"], blank=True, null=True)
     author = models.ForeignKey(User, help_text="you are posting.", related_name="posts")
     datetime_created = models.DateTimeField(auto_now_add=True)
@@ -67,7 +69,7 @@ class Post(models.Model):
     type = models.CharField(max_length=40, choices=TYPE_OF_POST)
     process = models.CharField(max_length=12, choices=PROCESS)
     credits = models.TextField(blank=True, null=True)
-    
+
     class Meta:
         ordering = ['-publish_at',]
         verbose_name_plural = 'posts'
@@ -90,3 +92,23 @@ class Post(models.Model):
             procent = 0
 
         return procent
+
+
+HEADING = (
+    ('h1', 'h1'),
+    ('h2', 'h2'),
+    ('h3', 'h3'),
+    ('h4', 'h4'),
+    ('h5', 'h5'),
+    )
+
+class Section(models.Model):
+    title = models.CharField(max_length=255, help_text="Title if the post. Can be anything up to 255 characters.", blank=True, null=True)
+    level = models.CharField(max_length=12, choices=HEADING, help_text="Does the title have head style", default="h2", blank=True, null=True)
+    body = models.TextField()
+    post = models.ForeignKey(Post, help_text="What post does the paragraf belong to?", related_name="paragraf")
+
+
+    def __unicode__(self):
+        return u'paragraf belong to %s' %self.post
+

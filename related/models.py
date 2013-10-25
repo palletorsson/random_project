@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from posts.models import Post
+from posts.models import Section
 from images.models import Image, ImageCollection
 
 
@@ -17,7 +17,7 @@ TYPE_OF_RELATED = (
     )
 
 class Related(models.Model):
-    post = models.ForeignKey(Post, help_text="This is the post of this relation")
+    section = models.ForeignKey(Section, help_text="This is the post of this relation")
     author = models.ForeignKey(User)
     date_created = models.DateTimeField(auto_now_add=True)
     note = models.TextField(null=True, blank=True, help_text="This is a note for the post")
