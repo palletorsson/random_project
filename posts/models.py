@@ -109,11 +109,12 @@ class Post(models.Model):
         exclude_list = start_exclude_list
 
         exclude_list = exclude_list.split()
-        section_words = self.the_text
-        section_words = str(section_words).strip(punctuation).lower()
+        section_words = u' %s' % self.the_text
+        section_words = section_words.strip(punctuation).lower()
         section_words =  re.sub('<[^<]+?>', '', section_words)
         section_words =  re.sub(r'[^\w\s]', '', section_words)
 
+        
 
         section_words = section_words.split()
         words_gen = []
