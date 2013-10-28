@@ -1,3 +1,5 @@
+#-*-coding:utf-8-*-
+
 import datetime
 
 from django.db import models
@@ -110,6 +112,9 @@ class Post(models.Model):
         section_words = self.the_text
         section_words = str(section_words).strip(punctuation).lower()
         section_words =  re.sub('<[^<]+?>', '', section_words)
+        section_words =  re.sub(r'[^\w\s]', '', section_words)
+
+
         section_words = section_words.split()
         words_gen = []
 

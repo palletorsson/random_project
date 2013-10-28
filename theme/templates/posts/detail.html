@@ -37,9 +37,9 @@
                         <{{section.level}} id="title_{{section.pk}}"> {{ section.title }} </{{section.level}}>
                     {% endif %}
                     <div class="section_body" id="section_{{section.pk}}" >
-                        <p>
+                        <div>
                             {{ section.body }}
-                        </p>
+                        </div>
 
                         {% if section.line %}
                         <div class="section_line" id="line_{{section.pk}}"> {{ section.line }} </div>
@@ -48,25 +48,33 @@
                         {% if section.note %}
                         <div class="section_note" id="note_{{section.pk}}"> {{ section.note }} </div>
                         {% endif %}
-
+ {% if forloop.last %} <br /><br /><br />  <hr />{% endif %}
                     </div>
+
                 </div>
+     {% if forloop.last %} <div class="clear">
+                   <hr />{% endif %}
                 {% endfor %}
 
-                    <div class="hidden" id="tagclould"> {{ post.getTagSorted }}</div>
-                    <div class="tag_title">Tag cloud</div>
-                    <div class="tagdiv">hej </div>
+                 </div>
+                <h3 class="tag_title"> Footnotes for {{ post.type }}: {{ post.title }}</h3>
+                <div class="footnote">
+
+                </div>
+                <div class="hidden" id="tagclould"> {{ post.getTagSorted }}</div>
+                <h2 class="tag_title"> Tag cloud for {{ post.type }}: {{ post.title }}</h2>
+                <hr />
+                <div class="tagdiv"></div>
+
 
 
             {% else %}
                 {{ post.the_text|safe }}
             {% endif  %}
 
-        </div> <!-- end of work -->
+        </div></div> <!-- end of work -->
 
-        <div class="footnote">
 
-        </div>
 
         <div class="comment_body">
             <div id="disqus_thread"></div>
@@ -156,16 +164,12 @@
                         {% if related.footnote %}
 
                             <div class="related_footnote">
-                               <div> {{related.footnote}} <a  href="#target_{{related.pk}}" id="footnote_{{related.pk}}"> >> 1</a> <span class="hidden" id="{{related.pk}}">{{related.anchor}}</span></div>
+                               <div> {{related.footnote}} [ <a  href="#target_{{related.pk}}" id="footnote_{{related.pk}}">1</a> ] <span class="hidden" id="{{related.pk}}">{{related.anchor}}</span></div>
                             </div>
                         {% endif %}
-                    </div>  </div>
-
+                    </div>
                 {% endfor %}
 
-                {% if forloop.last %}
-                   mjau
-                {% endif  %}
             {% endfor %}
             {% endif %}
 
