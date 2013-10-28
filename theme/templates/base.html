@@ -31,16 +31,20 @@
     
 {% block allpage %}
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="row spacebar">
-		<div class="col-xs-2 col-md-1">		
+        <div class="row spacebar">
+
+		    <div class="col-xs-2 col-md-1">
 				<a href="/"><span class="glyphicon glyphicon-flash"></span></a>
 			</div>
+
 			<div class="col-xs-6 col-md-4">
 				<a href="/posts/timeline/now">timeline</a> | <a href="/posts/">List</a> : <a href="/posts/type/Cases/">cases</a> - <a  href="/posts/type/Workshops/">workshops</a> - <a  href="/posts/type/Projects/">projects</a>
 			</div>
+
 			<div class="col-xs-6 col-md-4">
 				| <i> Articipation research  </i>
 			</div>
+
 			<div class="col-xs-3 col-md-2">
 				| <a href="/posts/about"> About </a> 
 			</div>
@@ -49,7 +53,9 @@
 	</nav>
 	{% block pagapage %}
 		<div class="container content"> <!--this is for the left margin -->
-		    <div id="changetext"></div>
+		    <div id="changetext">
+
+		    </div>
 		        <div class="pagetitle">
 		            {% block pagetitle %}
 
@@ -59,7 +65,7 @@
 		{% block allcontent %}
 
 		{% endblock %}
-
+ </div>
 	{% endblock %}
 {% endblock %}
 {% block footer %}
@@ -91,5 +97,6 @@
 {% endblock %}
    <script type="text/javascript" src="{{ STATIC_URL }}js/workofart.js"></script>
 </div>
- </body>
+
+</body>
 </html>

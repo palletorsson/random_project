@@ -1,5 +1,7 @@
 
-(function() {
+
+
+$( document ).ready(function() {
 var WORKOFART = WORKOFART || {};
 
 
@@ -87,8 +89,86 @@ if (postId) {
 	});
 }
 
+var mainline = false;
 
-})();
+$('.mainline_button').click(function() {
+    if (mainline) {
+        $('.section_body').css({color:'#000'});
+        $('.section_line, .section_note').css({display:'none'});
+
+        mainline = false
+    }
+    else {
+        mainline = true
+        $('.section_body').css({color:'pink'});
+        $('.section_line, .section_note').css({display:'block'});
+    }
+
+});
+
+
+ $('.section_body').each( function() {
+         h = $(this).height();
+         h = h/2+100;
+         $(this ).children('.section_line').css({top:'-'+h+'px', color: 'black'});
+         h = h-20;
+         $(this ).children('.section_note').css({top:'-'+h+'px', color: 'black'});
+    });
+
+$('.related').css({display:'block'});
+
+var top_position = 0;
+related =  $('.related_section_target');
+
+ related.each(function() {
+
+ target_id = this.id;
+ type = $(this).attr('data-target');
+ console.log(type)
+
+ if (type != 9) {
+ target = $('.section_'+target_id +' .section_body');
+
+ top_position = parseInt(target.offset().top);
+
+ $(this).css({position:'absolute', top:top_position, left:'980px'});
+ } else {
+
+ html = $(this).html()
+ con = ($(target).is(':contains("PHP")'))
+ indexphp = target.text();
+ var searchtarget = $(this).find( "div span" ).text();
+ var insert1 = indexphp.split(searchtarget);
+ id = $(this).find( "div span" ).attr('id');
+ console.log(id);
+ html1 = insert1[0] + searchtarget + ' [ <a href="#footnote_'+id+'" id="target_'+id+ '">1</a> ] ' + insert1[1];
+
+ target.html(html1);
+
+ $('.footnote').append(html)
+
+ }
+
+
+ });
+
+tag_json =  $('#tagclould').text();
+
+var json_obj = JSON.parse(tag_json);
+
+
+
+var tagcloud_html = '<div class="tagsdiv">'
+$.each(json_obj, function(k, v) {
+    v = v + 14;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    tagcloud_html = tagcloud_html + '<div class="single_tag" style="font-size:'+v+'px; padding:2px; height:22px; color:#'+randomColor+'"> '+k+' </div>';
+
+});
+ $('.tagdiv').html(tagcloud_html);
+
+
+});
 
 
 

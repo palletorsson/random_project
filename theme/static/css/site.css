@@ -36,6 +36,15 @@ h1, h2, h3, h4, h5, h6 {
     padding:5px;
     box-shadow: 0 0 0 1px #D1D1D1, 0 0 4px 1px #CCCCCC;
 }
+.boarder-right {
+   -moz-box-shadow: inset -2px 0px #888;
+    -webkit-box-shadow: inset -2px 0px #888;
+    box-shadow: inset -2px 0px #888;
+    padding-right: 100px;
+    padding-left: 40px;
+
+}
+
 .spacebar {
     font: 16px/18px "Din", sans-serif;
     background-color: white;
@@ -99,12 +108,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .related {
     background-color: white;
-    position:absolute;
-    left: 10px;
-    width:340px;
+    position:relative;
     margin:5px;
     padding:10px;
-    box-shadow: 2px 2px 2px 2px #888888;
+    width:340px;
+    box-shadow: 1px 1px 1px 1px #888888;
 }
 
 .worklist {
@@ -116,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .worklisttext {
     width:60%;
-    float:left; 
+    float:left;
 
 }
 
@@ -130,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline {
-	margin-left:20px; 
+	margin-left:20px;
 }
 
 footer img {
@@ -147,4 +155,54 @@ footer img {
 
 .process {
     margin-bottom:10px;
+}
+
+
+.section_body {
+    padding-top:20px;
+    float:left;
+}
+
+.section_line {
+    display:none;
+    font-size:2.5em;
+    position:relative;
+    top:-120px;
+    left:40px;
+}
+
+
+.section_note {
+    display:none;
+    font-size:1.5em;
+    position:relative;
+    top:-100px;
+    left:50px;
+    padding-right:120px;
+}
+
+.related_start {
+    display:block;
+}
+
+
+.a_little_left {
+    padding-left:20px;
+}
+
+
+.related_footnote {
+    position:relative;
+    top:10px;
+}
+
+.single_tag {
+    float:left;
+}
+
+.tagdiv {
+    display:block;
+    box-shadow: 0 0 0 1px #D1D1D1, 0 0 4px 1px #CCCCCC;
+    padding:10px;
+
 }

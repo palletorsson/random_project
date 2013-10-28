@@ -2,7 +2,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 from related.models import Related
 from datetime import datetime
-from models import Post
+from models import Post, Section
 
 def index(request):
     posts = Post.objects.filter(active=True)
@@ -12,13 +12,15 @@ def index(request):
     
 def detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
+    sections = Section.objects.filter(post=post)
+    related = Related.objects.filter(section=post)
 
-    related = Related.objects.filter(post=post)
 
     return render_to_response('posts/detail.html', {
         'post': post,
-        'related':related,
+        'sections':sections
     }, context_instance=RequestContext(request))
+
 
 def by_type(request, key):
     posts = Post.objects.filter(type = key, active=True)

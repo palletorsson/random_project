@@ -6,7 +6,7 @@
     <meta name="description" content=" Requery {{ post.title }}" />
 {%endblock%}
 {% block extra_head %}
-
+    <script type="text/javascript" src="{{ STATIC_URL }}js/masonry.pkgd.min.js"></script>
 {% endblock %}
 
 
@@ -24,40 +24,150 @@
 	  <li class="active"> {{ post.title }} </li>
 	</ol>	   
 </div>
-<div class="row workspace">
-	<div class="pull-right date"><small> Last update: ( {{ post.publish_at }} )</small> </div>
+<div class="row workspace paper">
+	    <div class="pull-right date"><small> Last update: ( {{ post.publish_at }} )</small> </div>
   		<span id="post_id" class="hidden">{{ post.pk }} </span>
+        <button class="mainline_button">mainline</button>
+            <div class="col-xs-12 col-sm-6 col-md-8 work">
+            {% if sections %}
+                {% for section in sections%}
+                <div class="section_{{section.pk}}" id="section_target_{{section.pk}}">
 
-  			<div class="col-xs-12 col-sm-6 col-md-8 work"> {{ post.the_text|safe }} </div>
-  				<div class="col-xs-6 col-sm-6 col-md-4 notes">
-    				<div class="related_outer">
+                    {% if section.title %}
+                        <{{section.level}} id="title_{{section.pk}}"> {{ section.title }} </{{section.level}}>
+                    {% endif %}
+                    <div class="section_body" id="section_{{section.pk}}" >
+                        <p>
+                            {{ section.body }}
+                        </p>
 
-   	 				</div>
-  				</div>
-			</div>
-<div class="comment_body">
+                        {% if section.line %}
+                        <div class="section_line" id="line_{{section.pk}}"> {{ section.line }} </div>
+                        {% endif %}
 
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'articipation'; // required: replace example with your forum shortname
+                        {% if section.note %}
+                        <div class="section_note" id="note_{{section.pk}}"> {{ section.note }} </div>
+                        {% endif %}
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div>
+                {% endfor %}
 
-</div>
-<div class="tags">
-    {% if tag in post.tags.all %}
-    {{ tag }} {% if not forloop.last %}, {% endif %}
-    {% endif %}
-</div>
+                    <div class="hidden" id="tagclould"> {{ post.getTagSorted }}</div>
+                    <div class="tag_title">Tag cloud</div>
+                    <div class="tagdiv">hej </div>
+
+
+            {% else %}
+                {{ post.the_text|safe }}
+            {% endif  %}
+
+        </div> <!-- end of work -->
+
+        <div class="footnote">
+
+        </div>
+
+        <div class="comment_body">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'articipation'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+
+        <div class="tags">
+            {% if tag in post.tags.all %}
+            {{ tag }} {% if not forloop.last %}, {% endif %}
+            {% endif %}
+        </div>
+
 {% endif %}
+
+        <div class="related_start">
+            {% if sections %}
+            {% for section in sections%}
+
+            {% for related in section.related_set.all %}
+            <div class="related_section_target" id="{{section.pk}}" data-target="{{related.type}}">
+
+                        {% if related.image %}
+                            <div class="related related_image">
+                               <div class="item "><img src="/media/{{related.image.image }}" alt="{{related.image.image }}" /></div>
+                            </div>
+                        {% endif %}
+
+                        {% if related.image_collection %}
+                            <div class="related related_image_collection">
+
+                                <!-- Content -->
+
+                                <div id="carousel-id" class="carousel slide">
+                                    <div class="carousel-inner">
+                                         {% for image in related.image_collection.image_set.all %}
+                                            {% if forloop.first %}
+                                             <div class="item active"><img src="/media/{{image.image}}" alt="{{image.image }}" /></div>
+                                        {% else %}
+                                            <div class="item "><img src="/media/{{image.image}}" alt="{{image.image }}" /></div>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-id" data-slide="prev">
+                                    <span class="icon-prev"></span>
+                                </a>
+
+                                <a class="right carousel-control" href="#carousel-id" data-slide="next">
+                                    <span class="icon-next"></span>
+                                </a>
+
+                            </div>
+
+                        {% endif %}
+
+                           {% if related.link %}
+
+                                <div class="related related_link">
+
+                                        <blockquote>
+                                           <a href="{{related.link}}"> <span class="glyphicon glyphicon-link"></span> {{related.link}} </a>
+                                            <div class="a_little_left"> {{related.note}}</div>
+                                        </blockquote>
+                                </div>
+                            {% endif %}
+                        {% if related.note and not related.link %}
+
+                            <div class="related related_note">
+                                {{related.note}}
+                            </div>
+                        {% endif %}
+
+                        {% if related.footnote %}
+
+                            <div class="related_footnote">
+                               <div> {{related.footnote}} <a  href="#target_{{related.pk}}" id="footnote_{{related.pk}}"> >> 1</a> <span class="hidden" id="{{related.pk}}">{{related.anchor}}</span></div>
+                            </div>
+                        {% endif %}
+                    </div>  </div>
+
+                {% endfor %}
+
+                {% if forloop.last %}
+                   mjau
+                {% endif  %}
+            {% endfor %}
+            {% endif %}
+
 {% endblock %}
     
