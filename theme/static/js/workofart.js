@@ -135,9 +135,13 @@ related.each(function() {
 
          index_footnote++;
          html = $(this).html()
+         target = $('.section_'+target_id +' .section_body');
          search_text = target.text();
          var searchtarget = $(this).find( "div span" );
+         console.log(searchtarget);
+
          var searchtarget_text = searchtarget.text();
+
          var between = search_text.split(searchtarget_text);
          var searchtarget_id = searchtarget.attr('id');
          console.dir(between)
