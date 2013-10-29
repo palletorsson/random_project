@@ -55,7 +55,7 @@
       <file leaf-file-name="site.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="14" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.93670887" vertical-offset="2889" max-vertical-offset="3660">
+            <state line="237" column="12" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.93670887" vertical-offset="2889" max-vertical-offset="3660">
               <folding />
             </state>
           </provider>
@@ -455,7 +455,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="14" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.93670887" vertical-offset="2889" max-vertical-offset="3660">
+        <state line="237" column="12" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.93670887" vertical-offset="2889" max-vertical-offset="3660">
           <folding />
         </state>
       </provider>
