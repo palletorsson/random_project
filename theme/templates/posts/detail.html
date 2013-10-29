@@ -7,6 +7,8 @@
 {%endblock%}
 {% block extra_head %}
     <script type="text/javascript" src="{{ STATIC_URL }}js/masonry.pkgd.min.js"></script>
+
+
 {% endblock %}
 
 
@@ -36,9 +38,8 @@
                 <div class="edit_section" id="edit_{{section.pk}}">
                     {{section.pk}}
                     <button class="edit">edit</button>
-
-                    </div>
-                 {% endif %}
+                </div>
+                {% endif %}
 
                 <div class="section_{{section.pk}}" id="section_target_{{section.pk}}">
 
@@ -119,12 +120,38 @@
             {% for related in section.related_set.all %}
             <div class="related_section_target" id="{{section.pk}}" data-target="{{related.type}}">
 
-                        {% if related.image %}
-                            <div class="related related_image popover right">
+                    {% if related.image %}
+                     <div class="related related_image popover right">
                                <div class="arrow"></div>
-                               <div class="item "><img src="/media/{{related.image.image }}" alt="{{related.image.image }}" /></div>
+
+
+                            <div class="item">
+
+                                   <a data-toggle="modal" href="#myModal" ><img src="/media/{{related.image.image }}" alt="{{related.image.image }}" /></a>
                             </div>
-                        {% endif %}
+                               <!-- Button trigger modal -->
+
+
+                          <!-- Modal -->
+                          <div class="zindex modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <img src="/media/{{related.image.image }}" alt="{{related.image.image }}" />
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                          </div><!-- /.modal -->
+
+                     </div>
+                     {% endif %}
 
                         {% if related.image_collection %}
                             <div class="related related_image_collection popover right">
