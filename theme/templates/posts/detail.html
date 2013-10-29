@@ -127,13 +127,13 @@
 
                             <div class="item">
 
-                                   <a data-toggle="modal" href="#myModal" ><img src="/media/{{related.image.image }}" alt="{{related.image.image }}" /></a>
+                                   <a data-toggle="modal" href="#myModal{{related.image.pk}}" ><img src="/media/{{related.image.image }}" alt="{{related.image.image }}" /></a>
                             </div>
                                <!-- Button trigger modal -->
 
 
                           <!-- Modal -->
-                          <div class="zindex modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="zindex modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel{{related.image.image}}" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
