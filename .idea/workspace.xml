@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fa7a1b7e-8acb-46ea-9f5b-9a540403b56b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/static/css/site.css" afterPath="$PROJECT_DIR$/theme/static/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/static/js/workofart.js" afterPath="$PROJECT_DIR$/theme/static/js/workofart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="articipation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +55,7 @@
       <file leaf-file-name="site.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="4" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.93670887" vertical-offset="2589" max-vertical-offset="3360">
+            <state line="216" column="19" selection-start="3140" selection-end="3140" vertical-scroll-proportion="0.9156118" vertical-offset="2589" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -457,7 +455,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="4" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.93670887" vertical-offset="2589" max-vertical-offset="3360">
+        <state line="216" column="19" selection-start="3140" selection-end="3140" vertical-scroll-proportion="0.9156118" vertical-offset="2589" max-vertical-offset="3360">
           <folding />
         </state>
       </provider>
