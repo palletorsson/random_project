@@ -31,6 +31,15 @@
             <div class="col-xs-12 col-sm-6 col-md-8 work">
             {% if sections %}
                 {% for section in sections%}
+                {% if user.is_authenticated %}
+
+                <div class="edit_section" id="edit_{{section.pk}}">
+                    {{section.pk}}
+                    <button class="edit">edit</button>
+
+                    </div>
+                 {% endif %}
+
                 <div class="section_{{section.pk}}" id="section_target_{{section.pk}}">
 
                     {% if section.title %}
