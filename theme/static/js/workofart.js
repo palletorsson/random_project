@@ -132,6 +132,7 @@ related.each(function() {
         top_position = parseInt(target.offset().top);
         $(this).css({position:'absolute', top:top_position, left:'66%'});
      } else {
+
          index_footnote++;
          html = $(this).html()
          indexphp = target.text();
@@ -139,7 +140,7 @@ related.each(function() {
          var insert1 = indexphp.split(searchtarget);
          id = $(this).find( "div span" ).attr('id');
 
-         html1 = insert1[0] + searchtarget + ' [ <a href="#footnote_'+id+'" id="target_'+id+ '">'+index_footnote+'</a> ] ' + insert1[1];
+         html1 = insert1[0] + ' [ <a href="#footnote_'+id+'" id="target_'+id+ '">'+index_footnote+'</a> ] ' + insert1[1];
 
          target.html(html1);
 
