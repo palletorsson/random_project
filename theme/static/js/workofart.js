@@ -129,7 +129,7 @@ related.each(function() {
      if (type != 9) {
         target = $('.section_'+target_id +' .section_body');
         top_position = parseInt(target.offset().top);
-        $(this).css({position:'absolute', top:top_position, left:'980px'});
+        $(this).css({position:'absolute', top:top_position, left:'66%'});
      } else {
 
          html = $(this).html()

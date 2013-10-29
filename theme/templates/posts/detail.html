@@ -34,7 +34,9 @@
                 <div class="section_{{section.pk}}" id="section_target_{{section.pk}}">
 
                     {% if section.title %}
+                      <div class="clear"></div>
                         <{{section.level}} id="title_{{section.pk}}"> {{ section.title }} </{{section.level}}>
+
                     {% endif %}
                     <div class="section_body" id="section_{{section.pk}}" >
                         <div>
@@ -109,14 +111,15 @@
             <div class="related_section_target" id="{{section.pk}}" data-target="{{related.type}}">
 
                         {% if related.image %}
-                            <div class="related related_image">
+                            <div class="related related_image popover right">
+                               <div class="arrow"></div>
                                <div class="item "><img src="/media/{{related.image.image }}" alt="{{related.image.image }}" /></div>
                             </div>
                         {% endif %}
 
                         {% if related.image_collection %}
-                            <div class="related related_image_collection">
-
+                            <div class="related related_image_collection popover right">
+                            <div class="arrow"></div>
                                 <!-- Content -->
 
                                 <div id="carousel-id" class="carousel slide">
@@ -146,7 +149,8 @@
 
                            {% if related.link %}
 
-                                <div class="related related_link">
+                                <div class="related related_link popover right">
+                                    <div class="arrow"></div>
 
                                         <blockquote>
                                            <a href="{{related.link}}"> <span class="glyphicon glyphicon-link"></span> {{related.link}} </a>
@@ -156,7 +160,8 @@
                             {% endif %}
                         {% if related.note and not related.link %}
 
-                            <div class="related related_note">
+                            <div class="related related_note  popover right">
+                                <div class="arrow"></div>
                                 {{related.note}}
                             </div>
                         {% endif %}

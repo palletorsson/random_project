@@ -114,7 +114,7 @@ class Post(models.Model):
         section_words =  re.sub('<[^<]+?>', '', section_words)
         section_words =  re.sub(r'[^\w\s]', '', section_words)
 
-        
+
 
         section_words = section_words.split()
         words_gen = []
