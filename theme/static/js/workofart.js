@@ -118,6 +118,7 @@ $('.mainline_button').click(function() {
 $('.related').css({display:'block'});
 
 var top_position = 0;
+var index_footnote = 0;
 
 related =  $('.related_section_target');
 
@@ -131,14 +132,14 @@ related.each(function() {
         top_position = parseInt(target.offset().top);
         $(this).css({position:'absolute', top:top_position, left:'66%'});
      } else {
-
+         index_footnote++;
          html = $(this).html()
          indexphp = target.text();
          var searchtarget = $(this).find( "div span" ).text();
          var insert1 = indexphp.split(searchtarget);
          id = $(this).find( "div span" ).attr('id');
 
-         html1 = insert1[0] + searchtarget + ' [ <a href="#footnote_'+id+'" id="target_'+id+ '">1</a> ] ' + insert1[1];
+         html1 = insert1[0] + searchtarget + ' [ <a href="#footnote_'+id+'" id="target_'+id+ '">'+index_footnote+'</a> ] ' + insert1[1];
 
          target.html(html1);
 
