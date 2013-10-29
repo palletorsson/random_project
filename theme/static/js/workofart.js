@@ -135,12 +135,13 @@ related.each(function() {
 
          index_footnote++;
          html = $(this).html()
-         indexphp = target.text();
-         var searchtarget = $(this).find( "div span" ).text();
-         var insert1 = indexphp.split(searchtarget);
-         id = $(this).find( "div span" ).attr('id');
-
-         html1 = insert1[0] + ' [ <a href="#footnote_'+id+'" id="target_'+id+ '">'+index_footnote+'</a> ] ' + insert1[1];
+         search_text = target.text();
+         var searchtarget = $(this).find( "div span" );
+         var searchtarget_text = searchtarget.text();
+         var between = search_text.split(searchtarget_text);
+         var searchtarget_id = searchtarget.attr('id');
+         console.dir(between)
+         html1 = between[0] + searchtarget_text + ' [ <a href="#footnote_' +searchtarget_id+ '" id="target_' +searchtarget_id+ '">'+index_footnote+'</a> ] ' + between[1];
 
          target.html(html1);
 
