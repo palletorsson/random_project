@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7a1b7e-8acb-46ea-9f5b-9a540403b56b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/templates/posts/detail.html" afterPath="$PROJECT_DIR$/theme/templates/posts/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/static/css/site.css" afterPath="$PROJECT_DIR$/theme/static/css/site.css" />
     </list>
     <ignored path="articipation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="detail.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/posts/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="78" selection-start="5581" selection-end="5581" vertical-scroll-proportion="0.87534624" vertical-offset="1468" max-vertical-offset="3360">
+            <state line="142" column="44" selection-start="5673" selection-end="5683" vertical-scroll-proportion="-27.583334" vertical-offset="1468" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="12" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-19.028572" vertical-offset="2829" max-vertical-offset="3600">
+            <state line="237" column="14" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.93670887" vertical-offset="2889" max-vertical-offset="3660">
               <folding />
             </state>
           </provider>
@@ -147,8 +147,8 @@
         <option value="$PROJECT_DIR$/theme/templates/base.html" />
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/theme/static/js/workofart.js" />
-        <option value="$PROJECT_DIR$/theme/static/css/site.css" />
         <option value="$PROJECT_DIR$/theme/templates/posts/detail.html" />
+        <option value="$PROJECT_DIR$/theme/static/css/site.css" />
       </list>
     </option>
   </component>
@@ -446,16 +446,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
+    <entry file="file://$PROJECT_DIR$/theme/templates/posts/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="12" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-19.028572" vertical-offset="2829" max-vertical-offset="3600">
+        <state line="142" column="44" selection-start="5673" selection-end="5683" vertical-scroll-proportion="-27.583334" vertical-offset="1468" max-vertical-offset="3360">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/posts/detail.html">
+    <entry file="file://$PROJECT_DIR$/theme/static/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="78" selection-start="5581" selection-end="5581" vertical-scroll-proportion="0.87534624" vertical-offset="1468" max-vertical-offset="3360">
+        <state line="237" column="14" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.93670887" vertical-offset="2889" max-vertical-offset="3660">
           <folding />
         </state>
       </provider>

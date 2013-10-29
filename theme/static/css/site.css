@@ -233,3 +233,7 @@ footer img {
 .modal-content {
     left:-120px;
 }
+
+.modal-body img {
+    width:80%;
+}
