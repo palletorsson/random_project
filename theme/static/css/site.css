@@ -4,7 +4,7 @@
 
 HTML,
 BODY {
-  font: 16px/1 "Rokkitt", serif;
+  font: 1em/1 "Rokkitt", serif;
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -236,4 +236,15 @@ footer img {
 
 .modal-body img {
     width:100%;
+}
+
+.edit {
+    position:relative;
+    left:-50px;
+    top:-50px;
+}
+
+.quote {
+    margin: 0 0 5px;
+    padding: 5px 5px;
 }

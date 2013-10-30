@@ -9,7 +9,7 @@ from filebrowser.fields import FileBrowseField
 from string import punctuation
 import re
 import json
-
+from django.dispatch import receiver
 from HTMLParser import HTMLParser
 #from ckeditor.fields import RichTextField
 #from taggit.managers import TaggableManager
@@ -52,6 +52,7 @@ class Blog(models.Model):
         return self.name
 
 
+
 class Post(models.Model):
     title = models.CharField(max_length=255, help_text="Title if the post. Can be anything up to 255 characters.")
     slug = models.SlugField()
@@ -76,9 +77,11 @@ class Post(models.Model):
     process = models.CharField(max_length=12, choices=PROCESS)
     credits = models.TextField(blank=True, null=True)
 
+
     class Meta:
         ordering = ['-publish_at',]
         verbose_name_plural = 'posts'
+
 
     def __unicode__(self):
         return u'%s' %self.title
@@ -115,7 +118,6 @@ class Post(models.Model):
         section_words =  re.sub(r'[^\w\s]', '', section_words)
 
 
-
         section_words = section_words.split()
         words_gen = []
 
@@ -145,9 +147,6 @@ class Post(models.Model):
         return data
 
 
-
-
-
 class ReseachMainline(models.Model):
     body = models.CharField(max_length=255, help_text="the main research line", blank=True, null=True)
 
@@ -164,6 +163,13 @@ HEADING = (
     ('h5', 'h5'),
     )
 
+
+TYPE_OF_SECTION = (
+    ('default', 'default'),
+    ('quote', 'quote'),
+    )
+
+
 class Section(models.Model):
     title = models.CharField(max_length=255, help_text="Title if the post. Can be anything up to 255 characters.", blank=True, null=True)
     level = models.CharField(max_length=12, choices=HEADING, help_text="Does the title have head style", default="h2", blank=True, null=True)
@@ -171,6 +177,7 @@ class Section(models.Model):
     post = models.ForeignKey(Post, help_text="What post does the paragraf belong to?", related_name="selection")
     line = models.ForeignKey(ReseachMainline, help_text="does this section add to the main research line", blank=True, null=True)
     note = models.TextField(blank=True, null=True)
+    type = models.CharField(max_length=12, choices=TYPE_OF_SECTION, help_text="Does the title have head style", default="default")
 
     def getTagSorted(self):
         N = 1000
@@ -209,3 +216,13 @@ class Section(models.Model):
         return u'paragraf belong to the post %s and is the %s section' % (self.post, self.pk)
 
 
+@receiver(models.signals.post_save, sender=Post)
+def execute_after_save(sender, instance, created, *args, **kwargs):
+    if created:
+        all = instance.the_text
+        sections = all.split('\n\r')
+
+        for section_text in sections:
+            new_section = Section(body=section_text)
+            new_section.post = instance
+            new_section.save()
