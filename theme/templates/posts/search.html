@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load fb_versions %}
+{% version model.field_name version_prefix %}
+{%block title%}
+    <title>Articipation  | Posts </title>
+    <meta name="description" content="Posts" />
+{%endblock%}
+
+    {% block pagetitle %}
+   <div class="row workspace">
+	<ol class="breadcrumb">
+	  <li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>
+	  <li></span><a href="/posts"> Search</a></li>
+	</ol>	   
+</div>
+    {% endblock %}
+
+    {% block allcontent %}
+    <div class="row workspace ">
+        	{% if query_string %}
+            <blockquote> You searched for: {{query_string}} </blockquote>
+        <div class="hidden the_search">{{query_string}}</div>
+
+        {% endif %}
+			{% if found_entries %}
+				{% for section in found_entries %}
+		<div class="worklist">
+
+					<div class="worklisttext"><span class="glyphicon glyphicon-file"></span><a href="/posts/{{ section.post }}/">  {{ section.title }}</a>
+                        <div class=" the_text">{{section.body}}</div>
+                        <div class="add_snippets"></div>
+
+					</div>
+			
+					<a href="/posts/{{ section.slug }}/"> <div class="worklistimg">{{ section.title }}</div></a>
+
+		</div>	<br /><br />
+	
+
+	 			{% endfor %}
+			{% endif %}
+		
+    {% endblock %}
+

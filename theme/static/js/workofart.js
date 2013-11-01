@@ -155,6 +155,40 @@ related.each(function() {
 
 });
 
+var all_search = $('.the_text');
+
+var the_search = $('.the_search').html();
+$.each( all_search, function( key, value ) {
+
+    var the_text = $(this).parent().find('.the_text').html();
+
+    var split_text = the_text.search(/\bthe_search\b/);
+    console.log(split_text)
+
+    var start = split_text-40
+    var end = split_text + 40
+    var subs  = the_text.substring(start ,end);
+    words = subs.split(' ')
+    var new_string = '...'
+    var loopit = 0;
+
+    $.each( words, function( key, value ) {
+        if (loopit==0) {
+            loopit = 1;
+
+        } else {
+            if (key == words.length-1) {
+            new_string = new_string + '...'
+            } else {
+            new_string = new_string + ' ' + value.trim()
+            }
+        }
+    });
+
+    $(this).parent().find('.add_snippets').html(new_string);
+});
+
+
 tag_json =  $('#tagclould').text();
 
 var json_obj = JSON.parse(tag_json);
@@ -167,6 +201,8 @@ $.each(json_obj, function(k, v) {
 
 });
  $('.tagdiv').html(tagcloud_html);
+
+
 
 
 });
