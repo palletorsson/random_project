@@ -113,6 +113,14 @@ MIDDLEWARE_CLASSES = (
 
 )
 
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}
+
 # some johnny settings
 CACHES = {
     'default' : dict(
@@ -159,8 +167,9 @@ INSTALLED_APPS = (
     'tastypie',
     'tinymce',
     'gunicorn',
-    
+    'haystack',
     #Workmode Apps
+    'project',
     'posts',
     'images',
     'related',
@@ -215,7 +224,6 @@ SESSION_COOKIE_SECURE = False
 ANONYMOUS_USER_ID = -1
 
 AUTH_PROFILE_MODULE = 'accounts.MyProfile'
-
 
 try:
     from .local_settings import *

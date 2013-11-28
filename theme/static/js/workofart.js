@@ -155,53 +155,37 @@ related.each(function() {
 
 });
 
-var all_search = $('.the_text');
 
 var the_search = $('.the_search').html();
+
+var all_search = $('.the_text');
+
+if (the_search) {
 $.each( all_search, function( key, value ) {
 
-    var the_text = $(this).parent().find('.the_text').html();
+    var the_text = $(this).text();
 
-    var split_text = the_text.search(/\bthe_search\b/);
-    console.log(split_text)
+	var t = the_text.replace(the_search, '<span style="color:darkblue;font-weight:bold;">' + the_search + '</span>');
+	$(this).html(t);
 
-    var start = split_text-40
-    var end = split_text + 40
-    var subs  = the_text.substring(start ,end);
-    words = subs.split(' ')
-    var new_string = '...'
-    var loopit = 0;
-
-    $.each( words, function( key, value ) {
-        if (loopit==0) {
-            loopit = 1;
-
-        } else {
-            if (key == words.length-1) {
-            new_string = new_string + '...'
-            } else {
-            new_string = new_string + ' ' + value.trim()
-            }
-        }
-    });
-
-    $(this).parent().find('.add_snippets').html(new_string);
 });
+}
 
 
 tag_json =  $('#tagclould').text();
 
-var json_obj = JSON.parse(tag_json);
+if (tag_json) {
+	var json_obj = JSON.parse(tag_json);
 
-var tagcloud_html = '<div class="tagsdiv">'
-$.each(json_obj, function(k, v) {
-    v = v + 16;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    tagcloud_html = tagcloud_html + '<div class="single_tag" style="font-size:'+v+'px; padding:2px; height:22px; color:#'+randomColor+'"> '+k+' </div>';
+	var tagcloud_html = '<div class="tagsdiv">'
+	$.each(json_obj, function(k, v) {
+		v = v + 16;
+		randomColor = Math.floor(Math.random()*16777215).toString(16);
+		tagcloud_html = tagcloud_html + '<div class="single_tag" style="font-size:'+v+'px; padding:2px; height:22px; color:#'+randomColor+'"> '+k+' </div>';
 
-});
- $('.tagdiv').html(tagcloud_html);
-
+	});
+	 $('.tagdiv').html(tagcloud_html);
+}
 
 
 

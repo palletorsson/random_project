@@ -1,0 +1,170 @@
+var ADFMediaURLs='';
+var ADF_clickTag='http://oas.dn.se/5c/dn.se/ekonomi/hem/L17/186878672/Top2/dn.se/Tele2_20582_Ekonomi_Top2_CHAL/Adform_bn2767204_1000x240.html/566554537431443151456f4142566b33?http://track.adform.net/C/?bn=2767204;bsqno=1;li=1;cset=19|19|19|1350|800|24|8|15|0|3|7|0|0;js=1;smid=3811856;unloadid=6341068284711149663;pdmn=blogg.dn.se;adfibeg=0;CREFURL=http%3a%2f%2fblogg.dn.se%2fteknikbloggen%2f2013%2f11%2f19%2ftre-torsdagar-for-digitalt-sjalvforsvar%2f';
+var ADF_ClickEvent='http://track.adform.net/C/?bn=2767204;bsqno=1;li=1;cset=19|19|19|1350|800|24|8|15|0|3|7|0|0;js=1;smid=3811856';
+var ADFtagID='1x';
+var ADFafbanID='2767204';
+var FlashObjectID='FlashID1x';
+var ADFDomain='http://s1.adform.net/Banners/';
+var ADFDomainCDN='http://files.adform.net/Banners/';
+var ADFVideoCDN='rtmp://s1yx966tga68s8.cloudfront.net/cfx/st/';
+var ADFVideoCDNList=['rtmp://s1yx966tga68s8.cloudfront.net/cfx/st/'];
+var ADFBanVer='4-208';
+var ADFBanVerBak='4-208';
+var ADFbu=false;
+var ADFerrTimeout = 15*24*60*60*1000;
+var ADFTemplateVersion='0';
+var ADFClientSiteId='0';
+var ADFTemplateId='0';
+var ADFGroupId='0';
+var ADFbanID='3563820';
+var ADFmembID='391927';
+var ADFcmpgnID='172829';
+var ADFassetID='0';
+var ADFbanPlacID='786867';
+var ADFUnloadID='6341068284711149663';
+var ADFGeoData='4276;11358;752';
+
+(function () {
+try{
+var i = Adform.ADFBannerUtils.getInstance()
+i.addBannerAttribute("1x", "bn", 2767204);
+i.addBannerAttribute("1x", "rotseqno", "1");
+i.addBannerAttribute("1x", "cookieID", "2882303761630503295");
+i.addBannerAttribute("1x", "smid", "3811856");
+i.addBannerAttribute("1x", "unloadID", "6341068284711149663");
+i.addBannerAttribute("1x", "height", 240);
+i.addBannerAttribute("1x", "width", 1000);
+i.addBannerAttribute("1x", "clickEvent", "http://track.adform.net/C/?bn=2767204;bsqno=1;li=1;cset=19|19|19|1350|800|24|8|15|0|3|7|0|0;js=1;smid=3811856");
+i.addBannerAttribute("1x", "pm", "172829");
+i.addBannerAttribute("1x", "visibilityArea", [50]);
+i.addBannerAttribute("1x", "ms", "391927");
+i.addBannerAttribute("1x", "ban", "3563820");
+i.addBannerAttribute("1x", "stubFileURL", "");
+i.addBannerAttribute("1x", "serverTime", 1384870472974);
+i.addBannerAttribute("1x", "bnpl", "786867");
+i.addBannerAttribute("1x", "unloadScriptVersion", 13);
+i.addBannerAttribute("1x", "isEventsEnabled", 1);
+i.setBannerRegisteredStatus("1x");
+}catch(e){}
+})();
+
+
+
+<!--
+var ADFtagid1736624432 = (typeof(ADFafbanID)!="undefined") ? ADFafbanID : 0;
+var ADFclickTagString1736624432 = (typeof(ADF_clickTag)!="undefined") ? escape(ADF_clickTag) : escape('http://track.adform.net/C/?bn='+ADFtagid1736624432);
+var ADFclickTagParameters1736624432 = (typeof(ADF_clickTagPars)!="undefined") ? escape(ADF_clickTagPars) : '';
+var ADFclickEventString = (typeof(ADF_ClickEvent) != "undefined") ? escape(ADF_ClickEvent) : escape('http://track.adform.net/C/?bn='+ADFtagid1736624432+';bsqno=1;li=1;cset=');
+var FlashObjectID=(typeof(FlashObjectID)!="undefined") ? FlashObjectID : 'adftest';
+var ADFDomain=(typeof(ADFDomain)!="undefined") ? ADFDomain : '';
+var ADFDomainCDN=(typeof(ADFDomainCDN)!="undefined") ? ADFDomainCDN : '';
+var ADFVideoCDN=(typeof(ADFVideoCDN)!="undefined") ? ADFVideoCDN : '';
+var ADFClientSiteId=(typeof(ADFClientSiteId)!="undefined") ? ADFClientSiteId : '';
+var ADFTemplateVersion=(typeof(ADFTemplateVersion)!="undefined") ? ADFTemplateVersion : '1736624432';
+var ADFTemplateId=(typeof(ADFTemplateId)!="undefined") ? ADFTemplateId : '';
+var ADFGroupId=(typeof(ADFGroupId)!="undefined") ? ADFGroupId : '';
+var ADFGeoData=(typeof ADFGeoData != "undefined" || ADFGeoData != null) ? ADFGeoData : '0;0;0';
+var ADFBanVer=(typeof(ADFBanVer)!="undefined") ? ADFBanVer : '1736624432';
+var ADFBanVerBak=(typeof(ADFBanVerBak)!="undefined") ? ADFBanVerBak : '1736624432';
+var ADFtagID=(typeof(ADFtagID)!="undefined") ? ADFtagID : '1x';
+if (typeof(ADFbu)=="undefined") ADFbu=false;
+
+var ADFcmpgnID = (typeof(ADFcmpgnID) != "undefined") ? ADFcmpgnID : '0';
+var ADFmembID = (typeof(ADFmembID) != "undefined") ? ADFmembID : '0';
+var ADFbanID = (typeof(ADFbanID) != "undefined") ? ADFbanID : '0';
+var ADFbanPlacID = (typeof(ADFbanPlacID) != "undefined") ? ADFbanPlacID : '0';
+var ADFUnloadID = (typeof(ADFUnloadID) != "undefined") ? ADFUnloadID : '0';
+
+
+var ADFclickTagVariables1736624432 = 'clickTAG='+ADFclickTagString1736624432+';C=1'+ADFclickTagParameters1736624432+'';
+if (ADFMediaURLs) ADFclickTagVariables1736624432 = ADFMediaURLs;
+
+
+
+if(typeof Adform == "undefined") {var Adform = {};};
+Adform.BannerData                    = {};
+Adform.Data                          = Adform.BannerData;
+Adform.RMBData                       = Adform.BannerData;
+Adform.RMBData.type                  = 'standard';
+Adform.RMBData.subtype               = 'flash';
+Adform.BannerData.timestamp          = '201310181013381795'; // std.flash 2013 03 25 rev. 1.174795
+Adform.BannerData.ADFFlash           =  ADFDomain +'3563820/3563820.swf?bv='+ADFBanVer;
+Adform.BannerData.ADFBuckup          =  ADFDomain +'3563819/3563819.gif?bv='+ADFBanVerBak;
+Adform.BannerData.ADFBuckupClickURL  =  ADF_clickTag+';C=0';
+Adform.BannerData.width              = "1000";
+Adform.BannerData.height             = "240";
+Adform.BannerData.ADFid              = ADFtagID;
+Adform.BannerData.ADFban             = (typeof(ADFafbanID)!="undefined") ? ADFafbanID : 0;
+Adform.BannerData.fVer               = 11.2;
+Adform.BannerData.placeId            = "ADFDiv_1736624432";
+Adform.BannerData.wmode              = "opaque";
+Adform.RMBData.landingPageTarget     = "_blank";
+Adform.BannerData.quality            = "autohigh";
+Adform.BannerData.bannerAlign        = "";
+
+
+(function () {
+var string = ''
+		+'cid='+ADFClientSiteId
+		+'&geo='+ADFGeoData
+		+'&gid='+ADFGroupId
+		+'&tv='+ADFTemplateVersion
+		+'&tid='+ADFTemplateId
+		+'&domain='+ ADFDomain 
+		+'&bv='+ADFBanVer
+		+'&ADFid='+ADFtagID
+		+'&ADFcmpgnID='+ADFcmpgnID
+		+'&ADFmembID='+ADFmembID
+		+'&ADFbanID='+ADFbanID
+		+'&ADFbanPlacID='+ADFbanPlacID
+		+'&unloadID='+ADFUnloadID
+		+"&bn="+ADFtagid1736624432
+		+"&wmode=opaque"
+;
+
+var flashVars = {};
+var i = 0, parts, name, value;
+var list = string.split('&');
+for (;i < list.length; i++) if (list[i]) {
+	parts = list[i].split('=');
+	name = encodeURIComponent(parts.shift());
+	value = encodeURIComponent(parts.join('='));
+	flashVars[name] = value;
+}
+
+var data = Adform.BannerData;
+data.flashvars = data.clicktags = flashVars;
+flashVars.evtBaseLink = encodeURIComponent(unescape(ADFclickEventString));
+
+var i = 0, parts, name, value;
+
+
+var params = ADFclickTagParameters1736624432;
+var str = ADFclickTagString1736624432
+var params2 = unescape(params);
+var str2 = unescape(str);
+
+var list = ADFclickTagVariables1736624432.split('='+ str);
+for (; i < list.length - 1; i++) {
+	name = encodeURIComponent(i ? list[i].split('&').pop() : list[i]);
+	value = encodeURIComponent(str2 + list[i+1].split('&')[0].replace(params, params2));
+	flashVars[name] = value;
+}
+
+})();
+
+Adform.RMBData.css =  ADFDomainCDN +"scripts/assets/css/Adform.RMB.css?bv="+ADFBanVer;
+
+Adform.BannerList = Adform.BannerList || [];
+Adform.BannerList.push(Adform.BannerData);
+
+if (!Adform.RMB || !Adform.RMB.AdConstructor) {
+	// Load constructor script
+	document.write('<scr' + 'ipt type="text/javascript" src="'+ ADFDomain +'scripts/rmb/Adform.RMB.js?version='+ ADFBanVer +'"></scr' + 'ipt>');
+} else {
+	// Run loaded constructor
+	Adform.RMB.AdConstructor.build();
+}
+//-->
+
+try{var i=window.Adform.ADFBannerUtils.getInstance();i.fireTargAdPixel('http://se.gmads.net/r?gmttzd={gmttzd}&gmtr={gmtr}&gmtctrl=1&gmtsrc=gmse&gmtcl=21&gmth=blogg.dn.se&gmthp=%2fteknikbloggen%2f2013%2f11%2f19%2ftre-torsdagar-for-digitalt-sjalvforsvar%2f');}catch(e){}

@@ -1,0 +1,9 @@
+Adform=window.Adform||{};
+Adform.host="http://track.adform.net";
+Adform.shost="http://s1.adform.net";
+Adform.scriptBase=Adform.shost+"/banners/scripts/";
+Adform.cache="208";
+Adform.ADFBannerData={URL:"http://track.adform.net/adfserve/?bn=2767204;click=http://oas.dn.se/5c/dn.se/ekonomi/hem/L17/186878672/Top2/dn.se/Tele2_20582_Ekonomi_Top2_CHAL/Adform_bn2767204_1000x240.html/566554537431443151456f4142566b33?",CREFURL:"",BN:"2767204"};
+if(!Adform.ADFBannerParams)Adform.ADFBannerParams=[];
+Adform.ADFBannerParams.push(Adform.ADFBannerData);
+typeof Adform.ADFUtilInstance=="undefined"?document.write('<scr'+'ipt type="text/javascript" src="'+Adform.scriptBase+'bootstrap/Adform.Bootstrap.js?v='+Adform.cache+'"></scr'+'ipt>'):new Adform.ADFBanner();

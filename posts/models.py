@@ -16,21 +16,11 @@ from HTMLParser import HTMLParser
 
 
 TYPE_OF_POST = (
-    ('Cases', 'Case'),
-    ('Projects', 'Project'),
+    ('Works', 'Works'),
     ('Definitions', 'Definition'),
-    ('Workshops', 'Workshops'),
+    ('Quotes', 'Quotes'),
     ('Pages', 'Pages'),
     )
-
-PROCESS = (
-    ('Initiated', 'Initiated'),
-    ('Completed', 'Completed'),
-    ('Documented', 'Documented'),
-    ('Reported', 'Reported'),
-    ('Postprocess', 'Postprocess'),
-    )
-
 
 class PostManager(models.Manager):
     def get_visible(self):
@@ -52,7 +42,6 @@ class Blog(models.Model):
         return self.name
 
 
-
 class Post(models.Model):
     title = models.CharField(max_length=255, help_text="Title if the post. Can be anything up to 255 characters.")
     slug = models.SlugField()
@@ -67,14 +56,10 @@ class Post(models.Model):
     datetime_modified = models.DateTimeField(auto_now=True)
     publish_at = models.DateTimeField(default=datetime.datetime.now(),
         help_text="Date and time post should become visible")
-    realtime_started = models.DateTimeField(blank=True, null=True)
-    realtime_ended = models.DateTimeField(blank=True, null=True)
     active = models.BooleanField(default=False,
                 help_text="Controls whether or not this item is visable on the site.")
-    #tags = TaggableManager()
     blog = models.ForeignKey(Blog, help_text="What blog does the post belong to?", related_name="posts")
     type = models.CharField(max_length=40, choices=TYPE_OF_POST)
-    process = models.CharField(max_length=12, choices=PROCESS)
     credits = models.TextField(blank=True, null=True)
 
 

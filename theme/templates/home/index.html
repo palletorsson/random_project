@@ -22,19 +22,19 @@
 
 	<div class="row workspace">
 		<div class="row mainspace">
-            {% if posts %}
+            {% if projects %}
 
-			{% for post in posts %}
+			{% for project in projects %}
 			<div class="homework">
 					<a href="/posts/{{ post.slug }}">
 					<img src="{% version post.image 'medium' %}"  alt="{{ post.slug }}" /> 
 				<div class="homeworktext ">								
-						<h4> <span class="glyphicon glyphicon-file"></span> {{ post.title }} </h4>
+						<h4> <span class="glyphicon glyphicon-file"></span> {{ project.title }} </h4>
 						</a>
 			
-						<div class="data"><small> Last update:  {{ post.publish_at }}</small></div>
-						<div class="type"> In: <a href="/posts/type/{{ post.type }}/">{{ post.type }}</a>   </div>
-                        <div class="process"> Process: {{ post.process }} </div>
+						<div class="data"><small> Last update:  {{ project.publish_at }}</small></div>
+						<div class="type"> In: <a href="/posts/type/{{ post.type }}/">{{ project.type }}</a>   </div>
+                        <div class="process"> Process: {{ project.process }} </div>
                         <div class="progress progress-striped active">   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{ post.process_procent }}" aria-valuemin="0" aria-valuemax="98" style="width:{{ post.process_procent }}%"></div>
                         </div>
 			    </div>

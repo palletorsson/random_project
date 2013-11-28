@@ -1,0 +1,60 @@
+html, body {margin: 0px; padding: 0px; background: #fff; font-family: Arial; font-size: 10pt; font-weight: normal;}
+a {color: #000; text-decoration: none; font-weight: normal;}
+p,td,div,li,h1,h2,h3,h4,h5,a { font-family:Arial,Helvetica,sans-serif;font-weight:normal;font-size:10pt;color:#000; margin: 0; padding: 0; }
+li { padding: 0; margin: 0;list-style-type:none; }
+ul { padding:0;margin:0; }
+
+/* di.se
+html, body {background: #f7eae4;}
+a {color: #16496f;}
+
+#maincol .box-container {height: 115px; position: relative; padding: 5px 5px 0px 5px;}
+#maincol .box-inner-container {height: 110px; background: #fff; position: relative; padding: 0px; border: 1px solid #ddd; overflow: hidden;  -webkit-border-radius: 1px; -moz-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; box-shadow: 1px 1px 1px rgba(0,0,0,.2); -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);}
+#maincol .box-bottom-right { float:right;position:relative; }
+
+#maincol .job { cursor:hand;cursor:pointer; height: 110px; padding: 0 0 0 130px; background-position: 20px center !important;}
+#maincol .job.first { border: 0; }
+
+.joblist .reward { width:80px;padding:18px 0px 0 0px;height:80px;background-position: 0px 34px !important;position:absolute;right:0px;top:0px; }
+.joblist .jobinfo { margin-right:90px; overflow:hidden; height:100px; }
+.joblist .company {	min-height:80px;margin:1px 10px 1px 10px;padding:3px 40px 1px 10px;position:relative; }
+
+.joblist h3, .joblist a { font-size:15px; margin-top: 12px; }
+.joblist .reward h4, .joblist .reward p, .joblist .reward a { font-size:0.8em;margin-bottom:0.2em; }
+.joblist p { font-size:0.9em;margin-top:6px; }
+.joblist a img { border: none; }
+*/
+
+/* sydsv */
+html, body {background: #fff;}
+a {color: #0E92EF; font-weight: bold;}
+
+
+/* box */
+#maincol .box-container {height: 165px; position: relative; padding: 5px 5px 0px 5px;}
+#maincol .box-inner-container {height: 160px; background: #fff; position: relative; padding: 0px; border: 1px solid #ddd; overflow: hidden;  -webkit-border-radius: 1px; -moz-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; box-shadow: 1px 1px 1px rgba(0,0,0,.2); -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);}
+#maincol .job { cursor:hand;cursor:pointer; height: 140px; padding: 60px 0 0 10px; background-position: 10px 10px !important;}
+#maincol .job:hover a {color: #a71d5a;} 
+#maincol .job.first { border: 0; }
+
+.joblist .reward { display: none; width:80px;padding:0;height:80px;background-position: 0px 34px !important;position:absolute;right:0px;top:0px; }
+.joblist .jobinfo { overflow:hidden; height:100px; margin-right: 10px; }
+.joblist .company {	min-height:80px;margin:0;padding: 0;position:relative; }
+
+.joblist h3, .joblist a { font-size:15px; margin-top: 12px; }
+.joblist .reward h4, .joblist .reward p, .joblist .reward a { font-size:0.8em;margin-bottom:0.2em; }
+.joblist p { font-size:0.9em;margin-top:6px; }
+.joblist a img { border: none; }
+
+/* Header */
+.list_title { height: 22px; position: relative; }
+.list_title h3 { font-size: 0.8em; font-weight: bold; top: 6px; left: 8px; position: relative;}
+.list_title .pb-jobtip { background-repeat: no-repeat; background-image: url('images/mj.png');height:8px;width:75px;float:right;margin:9px 0px 0 0; }
+.list_title #prevButton {position: absolute; top: 6px; left: 45%;}
+.list_title #nextButton {position: absolute; top: 6px; left: 55%;}
+.list_title .showAll {display: block; position: absolute; left: 8px; top: 400px;}
+.list_title .showAll:hover {color: #a71d5a}
+
+/* Carousel width-bug fix */
+.caroufredsel_wrapper {width: 100% !important;}
+#mycarousel {width: 100% !important;}

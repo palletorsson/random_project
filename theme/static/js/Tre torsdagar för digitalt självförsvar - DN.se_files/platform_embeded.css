@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+#menu_content_content_platform_embed_menu_tbl tr.mceFirst {
+	display: none;
+}
+
+span.mceText span.platform_embeded_list * {
+	vertical-align: middle !important;
+}
+
+.clearlooks2.platform-embed {
+	border: 4px solid #AAA;
+}
+
+.platform-embed .mceWrapper {
+	background: white;
+	color: #333;
+}
+
+.platform-embed .mceTop, .platform-embed .mceTop *, 
+.platform-embed .mceBottom, .platform-embed .mceBottom *, 
+.platform-embed .mceMiddle, .platform-embed .mceMiddle * {
+	border: none !important;
+	background: inherit !important;	
+	position: static !important;	
+}
+
+.platform-embed .mceMiddle span {
+	text-align: center;
+}
+
+.platform-embed .mceTop div {
+	height: 0px !important;
+}
+.platform-embed .mceTop {
+	background: #DFDFDF !important;
+	padding: 6px 5px 3px 10px;
+}
+
+.platform-embed .mceTop span {
+	background-image: url('/wp-content/mu-plugins/platform/embed/icons/default.png') !important; 
+	background-repeat: no-repeat !important;
+	padding-left: 30px;
+	line-height: 1.3;
+	color: #464646 !important;
+	text-align: left !important;
+	font-size: 13px !important;
+	font-weight: bold;
+	font-family: sans-serif !important;
+}
+
+.platform-embed .mceClose {
+	background: url('icons/icon_close.gif') 100% 100% no-repeat !important;
+}
+
+.platform-embed .mceClose:hover {
+	background: url('icons/red_icon_close.gif') 100% 100% no-repeat !important;
+}

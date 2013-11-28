@@ -1,0 +1,1709 @@
+
+#blogg div.filter-note {
+	padding: 0 5px 5px 5px;
+}
+
+
+/*hook*/
+
+
+#blogg #hook h3 {
+	color:#297599;
+}
+
+#hook h3.section a {
+    color: inherit;
+    line-height: 1;
+    font-size: 1em;
+}
+
+#hook div.block-dn-topics h3 {
+    color: #BF0005;
+}
+
+#hook h3.thin {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#hook h3 span.bg {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    line-height: 1.1;
+    font-size: .8em;
+}
+
+#hook h3.borderless {
+    padding-bottom: 0;
+    border-bottom-width: 0;
+    color: #191919;
+}
+
+#hook h2 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 1.2;
+    font-weight: bold;
+    width: 238px;
+    margin: 0 0 4px 0;
+}
+
+#hook h2.section a {
+    color: inherit;
+    line-height: 1;
+    font-size: 1em;
+}
+
+#hook div.block-dn-topics h2 {
+    color: #BF0005;
+}
+
+#hook h2.thin {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#hook h2 span.bg {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    line-height: 1.1;
+    font-size: .8em;
+}
+
+#hook h2.borderless {
+    padding-bottom: 0;
+    border-bottom-width: 0;
+    color: #191919;
+}
+
+#hook h4 {
+    display: inline;
+    font-size: 1.2em;
+    line-height: 1.2;
+    color: #191919;
+}
+
+#hook h4.headline {
+    font-weight: bold;
+}
+
+#hook h4.section {
+    display: block;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #666;
+    margin: 0 0 7px 0;
+}
+
+#hook span.category-headline {
+    display: block;
+    font-size: 1em;
+    color: #666;
+    text-transform: uppercase;
+}
+
+#hook h5 {
+    font-size: 1.1em;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+#hook h5.standard {
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+#hook p {
+    font-size: 1.2em;
+    line-height: 1.25;
+    margin: 0;
+    clear: both;
+    color: #333;
+}
+
+#hook p.hooktag {
+    font-weight: bold;
+}
+
+
+#hook img.list-image {
+    float: right;
+    margin: 2px 0 6px 10px;
+}
+
+
+#hook .block.widget-container {
+	border-top:3px #297599 solid;
+	padding-top:4px;
+	margin-bottom: 12px;
+}
+#hook .block.widget_dnblogg-addthis {
+	margin: 0;
+}
+
+
+#hook .block.widget-container ul {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.blog #hook .block.widget-container ul li a{
+	background-image:none !important;
+	padding:0;
+}
+#hook .block.widget-container ul li {
+    background:white;
+    background-image: none;
+    display: block;
+    padding: 6px 5px 5px;
+    border-top: 1px dotted #B4B4B4;
+}
+
+#hook #dnblogg-most-commented-3.block.widget-container ul li{
+	border-top:none;
+}
+
+
+#hook ul {
+    clear: both;
+    list-style: none;
+    font-size: 1em;
+    padding-left: 0;
+    margin: 0;
+    line-height: 1.250;
+}
+
+#hook ul li {
+    clear: both;
+}
+
+#hook ul li.last {
+    border-bottom-width: 0;
+}
+
+#hook ul li.hidden {
+    display: none;
+}
+
+#hook ul.floatlist {
+    float: left;
+    clear: both;
+    margin: 0 0 4px 0;
+}
+
+#hook ul.floatlist li {
+    clear: none;
+    float: left;
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+#hook ul.floatlist li a {
+    float: left;
+}
+
+#hook .travel-destination-item {
+    margin: 0 0 6px 0;
+}
+
+#hook ul.borderless {
+    margin-bottom: 3px;
+}
+
+#hook ul.borderless li {
+    padding: 0 0 3px 0;
+    border-bottom-width: 0;
+}
+
+#hook ul.borderless li.last {
+    padding-bottom: 6px;
+}
+
+#hook ul.borderless h4.section {
+    margin: 6px 0 0 0;
+}
+
+#hook ul.borderless h4.section.nomargin {
+    margin: 0;
+}
+
+#hook ul.borderless h5 {
+    padding: 7px 0 0 0;
+}
+
+#hook ul.qoute li {
+    padding: 8px 0 0 0;
+}
+
+#hook ul.qoute li.qoute {
+    padding: 5px 0 8px 0;
+    position: relative;
+}
+
+#hook ul.qoute h4.section {
+    margin: 0;
+}
+
+#hook ul.qoute h4.headline {
+    width: 160px;
+    display: block;
+}
+
+#hook ul.qoute h5 {
+    width: 160px;
+    font-size: 1.4em;
+    line-height: 1;
+    margin: 0 0 4px 0;
+}
+
+#hook ul.qoute p {
+    width: 160px;
+    display: block;
+}
+
+#hook ul.qoute img.author-image {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+}
+
+#hook ul.facts p {
+    display: block;
+    margin: 0 0 7px 0;
+}
+
+#hook div.block div.item {
+    width: 238px;
+}
+
+#hook div.block div.item p {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+#hook div.block div.item p.help-text {
+    font-size: 1em;
+    color: #666;
+    margin-top: -3px;
+}
+
+#hook div.block div.item p.help-text a {
+    color: #666;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#hook div.block div.item p.help-text a:hover {
+    color: #a3a3a3;
+}
+
+#hook div.block div.item div.paragraph-overlay {
+    float: left;
+    margin: 0;
+}
+
+#hook div.block div.item div.paragraph-overlay img.smallimage {
+    margin: 0 10px 3px 0;
+}
+
+#hook div.block div.item h4 {
+    font-size: 1.2em;
+    display: block;
+    margin: 0;
+    font-weight: bold;
+}
+
+#hook div.block div.item ul li {
+    padding: 0 0 2px 0;
+}
+
+#hook div.block ul li a {
+    font-size: 1.2em;
+}
+
+#hook div.block ul li p a {
+    font-size: 1em;
+}
+
+#hook div.block div.item img.bigimage {
+    margin: 0 0 3px 0;
+}
+
+#hook div.block div.item p.phototext {
+    font-size: 1em;
+    line-height: 1.125;
+    color: #666;
+    margin: 0 0 8px 0;
+}
+
+#hook div.block div.item p.phototext i {
+    font-style: normal;
+}
+
+#hook div.block img {
+    display: inline;
+}
+
+#hook div.block ul.blog-summary li {
+    color: #666;
+}
+
+#hook div.block ul.blog-summary h4.headline span {
+    font-size: .917em;
+}
+
+#hook div.block ul.blog-summary span.number {
+    font-size: 1.1em;
+    line-height: 1.3;
+    font-weight: bold;
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#hook div.block ul.blog-summary a span {
+    color: #0059bf;
+    font-weight: normal;
+}
+
+#hook div.block ul.blog-summary div.description {
+    float: left;
+}
+
+#hook div.block ul.blog-summary div.description p {
+    float: left;
+    clear: both;
+    font-size: 1.1em;
+}
+
+#hook div.block ul.blog-users h4.headline {
+    display: block;
+}
+
+#hook div.block ul.blog-users img.list-image {
+    border-width: 1px;
+}
+
+#hook div.block ul.blog-users p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+#hook div.block ul.blog-toplist li {
+    color: #666;
+    float: left;
+}
+
+#hook div.block ul.blog-toplist h4.headline span {
+    font-size: .917em;
+}
+
+#hook div.block ul.blog-toplist span.number {
+    font-size: 1.1em;
+    line-height: 1.3;
+    font-weight: bold;
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#hook div.block ul.blog-toplist a span {
+    font-weight: normal;
+}
+
+#hook div.block ul.blog-toplist div.description {
+    float: left;
+}
+
+#hook div.block ul.blog-toplist div.description p {
+    float: left;
+    clear: both;
+    font-size: 1.1em;
+}
+
+#hook div.block ul li p.message {
+    color: #000;
+}
+
+#hook div.block ul.navigation {
+    border-bottom-width: 0;
+    padding: 0 0 5px 0;
+    margin: 0 0 5px 0;
+    float: left;
+    width: 100%;
+}
+
+#hook div.block ul.navigation li {
+    float: left;
+    clear: none;
+    border: none;
+    width: auto;
+    padding: 0;
+}
+
+#hook div.block ul.navigation li.bullet {
+    font-weight: bold;
+    font-size: .9em;
+    color: #666;
+    padding: 0 5px;
+}
+
+#hook div.block ul.navigation li a {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+#hook div.block ul.navigation li a.active {
+    color: #000;
+}
+
+#hook div.block img.paragraph-image {
+    margin: 2px 0 3px 0;
+}
+
+#hook-tools a {
+    font-size: .917em;
+    line-height: 1.3;
+}
+
+.box-toolbox a {
+    color: #666;
+    font-size: .846em;
+    padding: 0 0 0 16px;
+    margin: 0 8px 0 0;
+    font-weight: bold;
+    float: left;
+}
+
+.box-toolbox a:hover {
+    color: #a3a3a3;
+}
+
+.box-toolbox a.share {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -400px;
+}
+
+.box-toolbox a.share:hover {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -450px;
+}
+
+.box-toolbox a.correct {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -601px;
+}
+
+.box-toolbox a.correct:hover {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -651px;
+}
+
+.box-toolbox a.print {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 0;
+}
+
+.box-toolbox a.print:hover {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -50px;
+}
+
+.box-toolbox a.tip-email {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -100px;
+}
+
+.box-toolbox a.tip-email:hover {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -150px;
+}
+
+.box-toolbox a.textsize-minus {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -198px;
+    width: 7px;
+    margin: 0;
+    padding: 0 0 0 7px;
+}
+
+.box-toolbox a.textsize-minus:hover {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -248px;
+}
+
+.box-toolbox a.textsize-plus {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -298px;
+    padding: 0 0 0 12px;
+}
+
+.box-toolbox a.textsize-plus:hover {
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-grey-50px.gif') no-repeat 0 -348px;
+}
+
+#hook-tools p {
+    float: left;
+    clear: both;
+}
+
+#hook ul.hook-recommend {
+    border-top-width: 1px;
+    padding-top: 5px;
+    margin-top: 6px;
+    float: left;
+    clear: both;
+    display: none;
+}
+
+#hook div.block ul.hook-recommend li a {
+    color: #86b200;
+    font-size: 1.1em;
+    background: url("http://www.dn.se/img/dn/icons/sprite-reader-50px.gif") 0 -200px no-repeat;
+    padding-left: 18px;
+}
+
+#hook div.block ul.hook-recommend li a:hover {
+    background-position: 0 -250px;
+    color: #b6d166;
+}
+
+#hook ul.user-opinions {
+    float: left;
+    clear: both;
+    width: 240px;
+}
+
+#hook ul.opinions-visible {
+    margin-top: 6px;
+    padding-top: 5px;
+    border-top-width: 1px;
+}
+
+#hook ul.user-opinions li {
+    float: left;
+    clear: none;
+    margin: 0 8px 0 0;
+    padding: 0;
+    width: auto;
+    border: none;
+}
+
+#hook ul.user-opinions li a {
+    margin: 0;
+    padding: 0;
+    color: #86b200;
+    font-size: 1.1em;
+    background-image: url("http://www.dn.se/img/dn/icons/sprite-reader-50px.gif");
+    background-repeat: no-repeat;
+}
+
+#hook ul.user-opinions li a:hover {
+    color: #b6d166;
+}
+
+#hook ul.user-opinions li a.comments {
+    background-position: 0 1px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+#hook ul.user-opinions li a.comments:hover {
+    background-position: 0 -99px;
+}
+
+#hook ul.user-opinions li a.twingly {
+    background-position: 0 -49px;
+    padding-left: 14px;
+    font-size: 1.1em;
+}
+
+#hook ul.user-opinions li a.twingly:hover {
+    background-position: 0 -149px;
+}
+
+#hook #ne-words {
+    display: none;
+}
+
+#hook #ne-words h3 {
+    color: #666;
+}
+
+#hook #ne-words h3.image-header {
+    background: url("http://www.dn.se/img/dn/elements/ne-logo.gif") 0 3px no-repeat;
+    margin: 0 0 4px 0;
+    padding-left: 36px;
+    width: 202px;
+}
+
+#hook #ne-words li a.link-active {
+    color: #669bd9;
+}
+
+#hook #ne-words .floatlist {
+    margin: 0 0 6px 0;
+}
+
+#hook .block-vertical h4 {
+    font-size: 1.1em;
+    margin: 0;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom-width: 1px;
+}
+
+#hook .block-vertical h4 img {
+    vertical-align: middle;
+}
+
+#hook .block-vertical ul li {
+    clear: both;
+    padding: 1px 0;
+}
+
+#hook .block-vertical ul li a {
+    font-weight: bold;
+}
+
+#hook .block-vertical p {
+    float: right;
+    font-size: 1.1em;
+    color: #666;
+    padding: 0 0 0 3px;
+}
+
+#hook .block-vertical li.last {
+    padding: 4px 0 3px 0;
+    margin-top: 3px;
+    border-top-width: 1px;
+}
+
+#hook .block-vertical li.last p {
+    float: none;
+}
+
+#hook ul.webtv-list .photo {
+    position: relative;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#hook ul.webtv-list .photo a {
+    display: inline-block;
+}
+
+#hook ul.webtv-list .photo img {
+    display: inline;
+    margin: 0;
+}
+
+#hook ul.webtv-list .photo .play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 22px;
+    margin: -11px 0 0 -18px;
+    background: url('http://www.dn.se/img/dn/elements/play_small.png') 0 0 no-repeat;
+}
+
+#hook ul.webtv-list .photo a:hover .play-overlay {
+    background: url('http://www.dn.se/img/dn/elements/play_small.png') 0 -50px no-repeat;
+}
+
+#hook ul.webtv-list li .date {
+    clear: none;
+    color: #666;
+    font-size: 1em;
+}
+
+#hook div.block-share {
+    padding: 6px 5px 5px 5px;
+}
+
+#hook div.block-share h4 {
+    font-size: 1.1em;
+    line-height: 1.5;
+    float: left;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#hook div.block-share ul.share-list {
+    width: auto;
+    clear: none;
+    float: left;
+}
+
+#hook div.block-share ul.share-list li {
+    float: left;
+    clear: none;
+    width: auto;
+    margin: 0 7px 0 0;
+    padding: 0 0 0 7px;
+    border-left: 1px solid #CCC;
+}
+
+#hook div.block-share ul.share-list li.first {
+    border: none;
+    padding: 0;
+}
+
+#hook div.block-share ul.share-list li.last {
+    margin: 0;
+}
+
+#hook div.block-share ul.share-list li a.share-icon {
+    display: inline-block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url('http://www.dn.se/img/dn/icons/icon-sprite-share-2-50px.png') no-repeat;
+}
+
+#hook div.block-share ul.share-list li a.share-icon.last {
+    padding-left: 20px;
+    width: 20px;
+}
+
+#hook div.block-share ul.share-list li a.share-icon.facebook {
+    background-position: 0 1px;
+}
+
+#hook div.block-share ul.share-list li a.share-icon.twitter {
+    background-position: 0 -48px;
+}
+
+#hook div.block-share ul.share-list li a.share-icon.pusha {
+    background-position: 0 -99px;
+}
+
+#hook div.block-share ul.share-list li a.share-icon.delicious {
+    background-position: 0 -149px;
+}
+
+#hook div.block-share ul.share-list li a.share-icon.maila {
+    background-position: 0 -196px;
+}
+
+#hook span.review {
+    top: -3px;
+}
+
+#hook .block-rates h3 {
+    font-size: 1.15em;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #CCC;
+}
+
+#hook .block-rates ul {
+    margin-top: 15px;
+}
+
+#hook .block-rates ul p {
+    font-weight: bold;
+    line-height: 17px;
+}
+
+#hook span.rating-1 img {
+    top: 0;
+}
+
+#hook span.rating-2 img {
+    top: -34px;
+}
+
+#hook span.rating-3 img {
+    top: -69px;
+}
+
+#hook span.rating-4 img {
+    top: -104px;
+}
+
+#hook span.rating-5 img {
+    top: -140px;
+}
+
+#hook span.review img {
+    position: absolute;
+}
+
+
+/*comments*/
+
+
+#blogg div.blog-item #article-comment div.form-row .submitbutton, #article-comment div.form-row .submitbutton {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+}
+
+#article-comment div.row-username {
+    border-color: #C6D98D;
+    border-width: 1px;
+    background: #f3f7e6;
+    padding: 10px 10px 6px 10px;
+    margin: 0 0 10px 0;
+    width: 456px;
+}
+
+#article-comment div.row-special {
+    position: absolute;
+    left: -10000px;
+}
+
+#article-comment div.form-row.row-username p {
+    width: 334px;
+}
+
+#blogg div.blog-item #article-comment div.row-username .name-row, #article-comment div.row-username .name-row {
+    margin: 0 0 6px 0;
+}
+
+#article-comment div.row-stretch.row-username input.user-input {
+    width: 326px;
+}
+
+#article-comment div.form-cols div.form-row {
+    float: left;
+    width: 170px;
+}
+
+#blogg div.blog-item #article-comment div.form-row p, #article-comment div.form-row p {
+    margin: 0 0 2px 0;
+    width: 350px;
+    font-size: 1.2em;
+    line-height: 1.250;
+}
+
+#article-comment div.form-cols div.form-row p {
+    width: 170px;
+}
+
+#article-comment div.form-row input {
+    background-color: #FFF;
+    font-size: 1.2em;
+}
+
+#article-comment div.form-row input.large {
+    width: 252px;
+}
+
+#article-comment div.form-row textarea {
+    width: 252px;
+    height: 70px;
+    background-color: #FFF;
+    font-size: 1.2em;
+}
+
+#article-comment div.form-row .inputerror {
+    border: solid 1px #bf0005;
+}
+
+#article-comment div.form-row .user-input-error {
+    border: solid 1px #bf0005;
+}
+
+#article-comment div.form-cols div.form-row input {
+    width: 136px;
+    background-color: #FFF;
+}
+
+#article-comment div.row-stretch input.user-input, #article-comment div.row-stretch input.large, #article-comment div.row-stretch textarea {
+    width: 456px;
+}
+
+#article-twingly-list {
+    display: none;
+}
+
+#article-twingly-list div.nav {
+    border-bottom: 0;
+}
+
+#article-twingly-list h5 {
+    font-size: 1.4em;
+}
+
+#article-comment div.row-disclaimer {
+    padding: 10px;
+    margin: 0 0 10px 0;
+    width: 334px;
+    border-width: 1px;
+}
+
+#blogg div.blog-item #article-comment div.row-disclaimer p, #article-comment div.row-disclaimer p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 3px;
+    width: auto;
+}
+
+#article-comment div.row-disclaimer p a {
+    color: #666;
+    text-decoration: underline;
+}
+
+#article-comment div.row-disclaimer p.blogg-error-message {
+    margin: 0;
+}
+
+#blogg div.blog-item #article-comment div.row-disclaimer p.form-agree, #article-comment div.row-disclaimer p.form-agree {
+    font-size: 1.2em;
+    line-height: 1;
+    color: #000;
+    margin: 0;
+}
+
+#article-comment div.row-disclaimer p.form-agree input {
+    height: 13px;
+    width: 13px;
+}
+
+#article-comment div.row-disclaimer p.form-agree label {
+    color: #000;
+}
+
+#article-twingly-list span.btn-whatis {
+    float: right;
+    color: #666;
+}
+
+#article-twingly-list span.btn-whatis a {
+    text-decoration: underline;
+    color: #666;
+}
+
+
+
+
+#blogg div.blog-item .article-comments, #article-readers #article-comments {
+    background: url('http://www.dn.se/img/dn/icons/comments-sprite.gif') right 5px no-repeat;
+    margin: 0;
+}
+
+#article-readers #article-comments-list {
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+}
+
+#article-readers #article-comment-wrapper.no-blogs #article-comments {
+    border: none;
+}
+
+
+
+/*blogg*/
+#blogg h1,
+#board div.box h3.box-background {
+	font-family: 'GuardianSansBold';
+	font-size:28px;
+	color:white;
+	padding-top:30px;
+	padding-left:7px;
+	border-bottom: 15px solid white;
+	padding-bottom: 5px;
+	width: 676px;
+	background:#ec1a29;
+}
+
+.blog-description.type01{
+	margin-left:-10px;
+}
+
+#board div.box h3.box-background {
+	width:493px;
+}
+
+#blogg h1 a,
+#blogg h1 a:hover {
+	color:white;
+}
+
+#blogg{
+	float: left;
+    width: 675px;
+    clear:both;
+	background: #fff;
+}
+
+#blogg .post{
+	padding:0 5px;
+}
+#blogg #content {
+	float:left;
+	width:500px;
+	border-right: 1px dotted #a7a7a7;
+	padding-right: 6px;
+}
+
+
+
+#blogg h2 {
+	font-size:34px;
+	font-family: 'PublicoRoman';
+	margin-bottom: 5px;
+}
+
+#board div.box .h4 a,
+#blogg h2 a {
+	color:#000;
+}
+
+#board div.box .h4 a:hover,
+#blogg h2 a:hover{
+	color:#222;
+}
+
+#blogg p {
+	font-size:12px;
+	line-height: 15px;
+}
+
+#blogg #content p {
+	font-size:15px;
+	line-height: 19px;
+}
+
+#blogg .entry-meta{
+	margin-bottom:9px;
+}
+#blogg .entry-meta,
+#blogg .entry-meta a,
+#blogg .entry-meta span,
+#blogg #content p.entry-meta {
+	color:#666;
+	font-size:12px;
+}
+
+#blogg .entry-meta a{
+	text-decoration: underline;
+}
+#blogg .entry-meta .author a{
+	text-decoration: none;
+}
+
+
+
+#blogg img{
+	margin:5px 0 5px -5px;
+	
+}
+
+#blogg iframe {
+	width:500px;
+	margin:5px 0 5px -5px;
+}
+
+#blogg .entry-meta a.category {
+	text-decoration: underline;
+}
+
+#blogg .entry-meta a:hover{
+	color:#555;
+}
+
+#blogg .socialtabs{
+	margin:0;
+}
+
+#blogg .paging{
+	float:left;
+	width:100%;
+	height:30px;
+}
+
+#board .box.feature,
+#blogg .type-post{
+	border-bottom:1px solid #CCCCCC;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+#board .box .box.feature {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#dnblogg-addthis-upper-3{
+	display:none;
+}
+
+
+#board div.box .h4{
+	font-size:3.4em;
+	font-family: PublicoRoman, Georgia, Serif;
+	margin: 0 0 5px 0;
+}
+
+#board div.box p{
+	font-size: 1.4em;
+	line-height: 1.2143;
+}
+
+
+a.icon.mid.blog-back {
+    background: url("../img/buttons/graybutton.png") no-repeat scroll 0 0 transparent;
+    color: #EEEEEE;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 19px;
+    margin-right: 10px;
+    padding-top: 6px;
+    text-align: center;
+    width: 85px;
+}
+
+a.icon.mid.blog-forward {
+    background: url("../img/buttons/graybutton.png") no-repeat scroll 0 0 transparent;
+    color: #EEEEEE;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 19px;
+    margin-right: 10px;
+    padding-top: 6px;
+    text-align: center;
+    width: 85px;
+}
+
+
+
+/*comments*/
+
+
+#blogg div.blog-item .article-readers, #article-readers {
+    margin: 20px 280px 20px 0;
+    border-width: 1px;
+    border-color: #c6d98d;
+    padding: 1px 10px 0 10px;
+}
+
+#blogg div.blog-item .article-readers-multiple {
+    margin: 10px 0;
+}
+
+#blogg div.blog-item .article-readers-multiple .article-comment-wrapper {
+    margin: 0;
+}
+
+#blogg #article-readers {
+    margin: 0 0 10px 0;
+}
+
+#blogg div.blog-item #article-readers div {
+    margin: 0;
+}
+
+#blogg div.blog-item #article-readers p {
+    margin: 0;
+}
+
+#blogg div.blog-item #article-readers div.row p {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    line-height: 1.250;
+    word-wrap: break-word;
+}
+
+#article-readers.opinions-blogsonly {
+    display: none;
+}
+
+#blogg div.blog-item #article-readers #article-comment .load-holder, #article-readers #article-comment .load-holder {
+    padding: 10px;
+    text-align: center;
+    border-color: #C6D98D;
+    border-width: 1px;
+    width: 334px;
+    margin: 0 0 8px 0;
+}
+
+#article-readers #article-comment h3.icon-loading {
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 10px;
+    color: #86b200;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 0 10px 40px;
+    background: url("http://www.dn.se/img/dn/icons/icon-ajaxloader-big.gif") 0 0 no-repeat;
+}
+
+#blogg div.blog-item #article-readers div.subrow.feedback, #article-readers div.subrow.feedback {
+    padding: 10px;
+    border-color: #C6D98D;
+    border-width: 1px;
+    width: 334px;
+    margin: 0 0 8px 0;
+}
+
+#blogg div.blog-item #article-readers div.subrow.center-feedback, #article-readers div.subrow.center-feedback {
+    text-align: center;
+    padding: 20px 10px 18px 10px;
+}
+
+#article-readers div.subrow.feedback h4 {
+    margin: 0 0 2px 0;
+    line-height: 1.250;
+}
+
+#article-readers div.subrow.feedback p {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    line-height: 1.250;
+}
+
+#article-readers div.subrow.center-feedback h4 {
+    margin: 0 auto;
+}
+
+#article-readers div.subrow.feedback p.nomargin {
+    margin: 0;
+}
+#article-readers #article-twingly {
+    display: none;
+    background: url('http://www.dn.se/img/dn/icons/comments-sprite.gif') right -46px no-repeat;
+    border-top-width: 1px;
+    border-color: #c6d98d;
+}
+
+#article-readers.opinions-blogsonly #article-twingly {
+    border: none;
+}
+
+#blogg div.blog-item .article-readers h4, #article-readers h4 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#blogg div.blog-item .article-readers h4 a, #article-readers h4 a {
+    padding: 0 0 0 23px;
+    background: url('http://www.dn.se/img/icons/buttons-usergen-sprite50px.gif') 0 3px no-repeat;
+    color: #86b200;
+    line-height: 2.2;
+    display: block;
+}
+
+#blogg div.blog-item .article-readers h4 a:hover, #article-readers h4 a:hover {
+    background: url('http://www.dn.se/img/icons/buttons-usergen-sprite50px.gif') 0 -97px no-repeat;
+    color: #b6d166;
+}
+
+#article-readers .expand a {
+    background: url('http://www.dn.se/img/icons/buttons-usergen-sprite50px.gif') 0 -47px no-repeat;
+}
+
+#article-readers .expand a:hover {
+    background: url('http://www.dn.se/img/icons/buttons-usergen-sprite50px.gif') 0 -147px no-repeat;
+}
+
+#blogg div.blog-item .article-readers h4 span, #article-readers h4 span {
+    color: #666;
+    margin: 0 0 0 6px;
+    font-weight: bold;
+}
+
+#article-readers h4 span#article-comments-count {
+    margin: 0;
+}
+
+#article-readers h4 span.twingly-count {
+    margin: 0;
+}
+
+#article-readers div.row {
+    border-top: dotted 1px #c6d98d;
+    padding: 6px 0 2px 0;
+    clear: left;
+}
+
+#blogg div.blog-item #article-readers div.row p, #article-readers div.row p {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    line-height: 1.250;
+    word-wrap: break-word;
+}
+
+#article-readers div.row a.write-button {
+    width: 140px;
+    height: 23px;
+    overflow: hidden;
+    display: block;
+    float: right;
+    margin: 0 0 0 3px;
+}
+
+#article-readers div.row a.write-button img {
+    display: inline;
+}
+
+#article-readers div.row select.select-dropdown {
+    font-size: 1em;
+}
+
+#blogg div.blog-item #article-readers div.row p.from, #article-readers div.row p.from {
+    color: #666;
+    font-size: 1.1em;
+    margin: 0 0 5px 0;
+    word-wrap: break-word;
+}
+
+#article-readers div.row p.from a {
+    text-decoration: underline;
+    color: #666;
+}
+
+#article-readers div.row p.from a.report, #article-readers div.row p.from a.reported {
+    text-decoration: none;
+}
+
+#article-twingly-list div.nav {
+    padding-bottom: 8px;
+}
+
+#article-readers div.nav a {
+    padding: 0 0 0 20px;
+    color: #666;
+}
+
+#article-readers div.nav span.paging {
+    width: 178px;
+    display: inline-block;
+    text-align: center;
+}
+
+#article-readers div.nav span a {
+    border-width: 1px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#article-readers div.nav .item {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+    padding: 2px 0;
+    margin: 0 2px 0 0;
+    font-size: 1.2em;
+}
+
+#article-readers div.nav a.prev {
+    background: url('http://www.dn.se/img/dn/icons/btn-prev.gif') no-repeat;
+    padding: 3px 0 3px 25px;
+    width: 72px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#article-readers div.nav span.nolink {
+    width: 97px;
+    display: inline-block;
+    color: #999;
+    font-size: 1.2em;
+}
+
+#article-readers div.nav a.next {
+    background: url('http://www.dn.se/img/dn/icons/btn-next.gif') right top no-repeat;
+    padding: 3px 25px 3px 0;
+    width: 52px;
+    text-align: right;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#article-comment {
+    border-top: dotted 1px #c6d98d;
+    padding: 6px 0 0 0;
+}
+
+#article-comment div.form-row .blogg-error-message {
+    padding-top: 2px;
+    color: #bf0005;
+    font-size: 1.1em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#article-comment div.form-cols {
+    float: left;
+    clear: left;
+}
+
+#comment-publish-facebook-row {
+    display: none;
+}
+
+#blogg div.blog-item #article-comment div.form-row, #article-comment div.form-row {
+    margin: 0 0 10px 0;
+}
+
+#blogg div.blog-item #article-comment div.form-row .submitbutton, #article-comment div.form-row .submitbutton {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+}
+
+#article-comment div.row-username {
+    border-color: #C6D98D;
+    border-width: 1px;
+    background: #f3f7e6;
+    padding: 10px 10px 6px 10px;
+    margin: 0 0 10px 0;
+    width: 456px;
+}
+
+#article-comment div.row-special {
+    position: absolute;
+    left: -10000px;
+}
+
+#article-comment div.form-row.row-username p {
+    width: 334px;
+}
+
+#blogg div.blog-item #article-comment div.row-username .name-row, #article-comment div.row-username .name-row {
+    margin: 0 0 6px 0;
+}
+
+#article-comment div.row-stretch.row-username input.user-input {
+    width: 326px;
+}
+
+#article-comment div.form-cols div.form-row {
+    float: left;
+    width: 170px;
+}
+
+#blogg div.blog-item #article-comment div.form-row p, #article-comment div.form-row p {
+    margin: 0 0 2px 0;
+    width: 350px;
+    font-size: 1.2em;
+    line-height: 1.250;
+}
+
+#article-comment div.form-cols div.form-row p {
+    width: 170px;
+}
+
+#article-comment div.form-row input {
+    background-color: #FFF;
+    font-size: 1.2em;
+}
+
+#article-comment div.form-row input.large {
+    width: 252px;
+}
+
+#article-comment div.form-row textarea {
+    width: 252px;
+    height: 70px;
+    background-color: #FFF;
+    font-size: 1.2em;
+}
+
+#article-comment div.form-row .inputerror {
+    border: solid 1px #bf0005;
+}
+
+#article-comment div.form-row .user-input-error {
+    border: solid 1px #bf0005;
+}
+
+#article-comment div.form-cols div.form-row input {
+    width: 136px;
+    background-color: #FFF;
+}
+
+#article-comment div.row-stretch input.user-input, #article-comment div.row-stretch input.large, #article-comment div.row-stretch textarea {
+    width: 456px;
+}
+
+#article-twingly-list {
+    display: none;
+}
+
+#article-twingly-list div.nav {
+    border-bottom: 0;
+}
+
+#article-twingly-list h5 {
+    font-size: 1.4em;
+}
+
+#article-comment div.row-disclaimer {
+    padding: 10px;
+    margin: 0 0 10px 0;
+    width: 334px;
+    border-width: 1px;
+}
+
+#blogg div.blog-item #article-comment div.row-disclaimer p, #article-comment div.row-disclaimer p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 3px;
+    width: auto;
+}
+
+#article-comment div.row-disclaimer p a {
+    color: #666;
+    text-decoration: underline;
+}
+
+#article-comment div.row-disclaimer p.blogg-error-message {
+    margin: 0;
+}
+
+#blogg div.blog-item #article-comment div.row-disclaimer p.form-agree, #article-comment div.row-disclaimer p.form-agree {
+    font-size: 1.2em;
+    line-height: 1;
+    color: #000;
+    margin: 0;
+}
+
+#article-comment div.row-disclaimer p.form-agree input {
+    height: 13px;
+    width: 13px;
+}
+
+#article-comment div.row-disclaimer p.form-agree label {
+    color: #000;
+}
+
+#article-twingly-list span.btn-whatis {
+    float: right;
+    color: #666;
+}
+
+#article-twingly-list span.btn-whatis a {
+    text-decoration: underline;
+    color: #666;
+}
+
+#blogg .blog-description-new{
+	padding:5px;
+	margin-bottom: 7px;
+}
+
+#blogg .blog-description-new p,
+#blogg .blog-description-new a,
+#blogg .blog-description-new  {
+	font-size:12px;
+	line-height:15px;
+}
+
+.blog-description .blogg-text,
+.blog-description .icon-mid-rss,
+.blog-description-new h1{
+	display:none;
+}
+ 
+#blogg .paging{
+	position: relative;
+	padding:10px 0;
+}
+
+a.blog-back{
+	left:0;
+	position: absolute;
+}
+
+a.blog-forward{
+	right:0;
+	position: absolute;
+}
+
+.paging a.blog-back:hover,
+.paging a.blog-forward:hover{
+	background: url("../img/buttons/graybutton.png");
+	background-position: 0 -26px;
+	color:white;
+}
+
+#blogg #content p.user-profile {
+	font-size:12px;
+}
+
+#hook ul li a:link, #hook ul li a:active, #hook ul li a:visited{
+	background-image:none !important;
+	padding:0 !important;
+}
+
+.block-share .addthis_default_style a {
+	padding: 0 !important;
+	border: 0 !important;
+	margin: 0 0 5px 5px !important;
+}
+
+.recommend-holder {
+	margin: 10px 0;
+}
+.recommend-holder .recommend-link {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.recommend-holder  .status {
+	margin-top: 10px;
+}
+
+
+/* Hide premium controls on blog frames */
+#header-verticals li.dark a {
+    display: none !important;
+}
+#dnpremium-tabs {
+    display: none;
+}
+#blogg{
+    zoom: 1;    
+}
+#main .colspan {
+	zoom: 1;
+	clear: both;
+	width: 1000px;
+	min-height: 10px;
+	margin: auto auto 8px;
+	background: url(../img/dn/elements/bg_columns.png) repeat-y 508px 0 !important;
+}
+#blogg:before, #blogg:after,
+#main .colspan:before,#main .colspan:after {
+    display:table;
+    content:"";
+    zoom: 1;
+    *display: inline;
+}	
+#main .colspan:after,#blogg:after{
+    clear:both;
+}
+.colspan h2.mirror-title {
+    background-color: #E5E5E5;
+    border-bottom: 10px solid #FFFFFF;
+    clear: both;
+    color: #222222;
+    float: left;
+    font-family: GuardianSansRegular,Arial,Sans-serif;
+    font-size: 1.6em;
+    width: 100%;
+}
+.colspan h2.mirror-title a {
+    border-top: 3px solid #B2B2B2;
+    color: #222222;
+    display: block;
+    font-weight: normal;
+    padding: 18px 7px 6px;
+}
+#blogg {
+	background: #fff;
+	padding-bottom: 35px;
+}
+
+/* fix for dn 30 */
+
+    #blogg .entry-content
+    {
+        border-bottom: 0px !important;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+    }
