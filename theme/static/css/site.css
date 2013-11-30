@@ -4,11 +4,11 @@
 
 HTML,
 BODY {
-  font: 1em/1 "Rokkitt", serif;
+  font-family: 1em/1 Tahoma, Ariel, serif;
   }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Rokkitt", serif;
+  font-family: Tahoma, Ariel, serif;
 }
 
 .navbar-brand img {

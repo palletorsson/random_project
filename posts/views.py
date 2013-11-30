@@ -1,6 +1,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 from related.models import Related
+import re
 
 from models import Post, Section
 import operator
@@ -16,6 +17,7 @@ def index(request):
 def detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
     sections = Section.objects.filter(post=post).reverse()
+
     related = Related.objects.filter(section=post)
 
 
