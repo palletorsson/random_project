@@ -29,7 +29,7 @@
 }
 
 .timeline_label {
-	height:160px;
+	height:300px;
 	width:2540px;
 }
 .timeline_media {
@@ -53,8 +53,8 @@
 }
 
 .timeline_img  {
-    width:200px;
-    margin:10px;
+    width:180px;
+    margin:20px;
     position:relative;
     left:-100px;
     border: 1px solid pink;

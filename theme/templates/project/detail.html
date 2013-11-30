@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load fb_versions %}
+{%block title%}
+    <title>Articipation  | {{ project.title }} </title>
+    <meta name="description" content=" Requery {{ project.title }}" />
+{%endblock%}
+{% block extra_head %}
+
+
+
+{% endblock %}
+
+
+{% block pagetitle %}
+{% endblock %}
+{% block allcontent %}
+{{ project.title }}
+{% if project %}
+
+
+<div class="row workspace">
+	<ol class="breadcrumb">
+	  <li><span class="glyphicon glyphicon-home"></span><a href="/"> Home</a></li>
+	  <li><a href="/projects"> Projects </a></li>
+	  <li><a href="/projects/type/{{ project.type }}"> {{ project.type }}</a></li>
+	  <li class="active"> {{ project.title }} </li>
+	</ol>	   
+</div>
+
+<div class="row workspace paper">
+
+    <span id="project_id" class="hidden">{{ project.pk }} </span>
+
+        <div class="col-xs-12 col-sm-6 col-md-8 work">
+
+
+            {% if project.title %}
+                <div class="title" id="title_{{project.pk}}"><h2>Project: <i> {{ project.title }}  (  {{ project.process_procent }}% ) </i> </h2></div>
+            {% endif %}
+
+            {% if project.summery %}
+                <div class="summery" id="summery_{{project.pk}}"> {{ project.summery }}</div>
+            {% endif %}
+
+            {% if project.process %}
+                <div class="text" id="text"><h3> Text </h3></div>
+            {% endif %}
+
+            {% if project.posts %}
+                <div class="project_posts" id="posts_{{project.pk}}">
+                {% for post in project.posts.all %}
+                   <blockquote> <a href="/posts/{{ post.slug }}/"> {{ post.title }} ( in {{ post.type }} ) </a> </blockquote>
+                 {% endfor %}
+                </div>
+            {% endif %}
+
+
+            {% if project.process %}
+                <hr>
+                <div class="meta" id="meta"><h3>  Meta </h3></div>
+            {% endif %}
+
+            {% if project.process %}
+                <div class="Progress"><h4> Progess: </h4></div>
+                <div class="project_process" id="process_{{project.pk}}"> Project face: {{ project.process }} </div>
+            {% endif %}
+
+            {% if project.process_procent %}
+                <div class="process_procent" id="process_procent_{{project.pk}}"> Project is {{ project.process_procent }} % done </div>
+            {% endif %}
+
+            {% if project.realtime_started %}
+                <div class="time"><h4>Time:</h4> </div>
+                <div class="date">Projected started: {{ project.realtime_started }} </div>
+            {% endif %}
+            {% if project.publish_at %}
+                <div class="date">Last update: {{ project.publish_at }} </div>
+            {% endif %}
+
+
+
+            {% if project.process %}
+                <div class="media" id="media"><h3> Media </h3></div>
+            {% endif %}
+
+            {% if project.image %}
+                <div class="image" id="image_{{project.pk}}"><img src="{% version project.image 'medium' %}"  alt="{{ project.slug }}" /></div>
+            {% endif %}
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
+    

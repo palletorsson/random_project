@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 from related.models import Related
-from datetime import datetime
+
 from models import Post, Section
 import operator
 from django.db.models import Q
@@ -35,31 +35,5 @@ def by_type(request, key):
     }, context_instance=RequestContext(request))
 
 
-def timeline(request, key):
-    posts = Post.objects.filter(active=True)
-    draw = 19
-    started = datetime(2012, 1, 1).date()
-    i = 0
-    width = 3 * 12 * 70 #2590
-    alltime = datetime(2014, 12, 30).date() - started
-    alltimenum = alltime.days #1040
-    powervalue = float(width)/float(alltimenum)
-    today = datetime.now().date() - started
-    today = int(((today.days * powervalue)))
-
-    for post in posts:
-        lan = post.realtime_started.date() - started
-        duration = post.realtime_ended.date() - post.realtime_started.date()
-        posts[i].days_ago = int(((lan.days * powervalue)))
-        posts[i].duration = int(duration.days * powervalue)
-        print posts[i].days_ago
-        i = i + 1
-
-
-    return render_to_response('posts/timeline.html', {
-        'posts': posts,
-        'draw': draw,
-        'today':today,
-    }, context_instance=RequestContext(request))
 
 

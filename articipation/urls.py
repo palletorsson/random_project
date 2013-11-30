@@ -13,9 +13,9 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('',
-    url(r'^$', 'home.views.first_page', name='index'),
+    url(r'^$', 'project.views.first_page', name='index'),
     url(r'^posts/', include('posts.urls')),
-    url(r'^projects/', include('project.urls')),
+    url(r'^project/', include('project.urls')),
     url(r'^admin/', include(admin.site.urls)),
     (r'^grappelli/', include('grappelli.urls')), # grappelli URLS
     url(r'^admin/filebrowser/', include(site.urls)),

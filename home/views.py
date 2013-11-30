@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from models import Home
+from home.models import Home
 from images.models import Image, ImageCollection
 from posts.models import Post
 from project.models import Project
