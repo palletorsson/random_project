@@ -171,6 +171,7 @@ def execute_after_save(sender, instance, created, *args, **kwargs):
         sections = all.split('\n\r')
 
         for section_text in sections:
+            section_text =  re.sub(r'(?<=[a-z])\r?\n', '<br>', section_text)
             new_section = Section(body=section_text)
             new_section.post = instance
             new_section.save()
@@ -188,7 +189,7 @@ def getTagSorted(all, pk):
 
     exclude_list = exclude_list.split()
     section_words = u' %s' % all
-    print section_words
+
     section_words = section_words.strip(punctuation).lower()
     section_words =  re.sub('<[^<]+?>', '', section_words)
     section_words =  re.sub(r'[^\w\s]', '', section_words)
@@ -224,6 +225,5 @@ def getTagSorted(all, pk):
     post.gen_tags = data
     post.save()
 
-    print data
     return data
 
