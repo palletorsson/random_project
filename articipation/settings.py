@@ -156,7 +156,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     #'disqus',
-    #'threadedcomments',
+    'threadedcomments',
     'django.contrib.comments',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -177,7 +177,7 @@ INSTALLED_APPS = (
 )
 
 
-#COMMENTS_APP = 'threadedcomments'
+COMMENTS_APP = 'threadedcomments'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
