@@ -197,6 +197,9 @@ class Section(models.Model):
 
         return taglist
 
+    class Meta:
+        ordering = ['-pk',]
+
     def __unicode__(self):
         return u'paragraf belong to the post %s and is the %s section' % (self.post, self.pk)
 

@@ -15,7 +15,7 @@ def index(request):
     
 def detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    sections = Section.objects.filter(post=post).order_by('-pk')
+    sections = Section.objects.filter(post=post).reverse()
     related = Related.objects.filter(section=post)
 
 
