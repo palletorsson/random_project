@@ -171,7 +171,7 @@ def execute_after_save(sender, instance, created, *args, **kwargs):
         sections = all.split('\n\r')
 
         for section_text in sections:
-            section_text =  re.sub(r'(?<=[a-z])\r?\n', '<br>', section_text)
+            section_text =  re.sub(r'(?<=[a-z])\r?\n', '<br/>', section_text)
             new_section = Section(body=section_text)
             new_section.post = instance
             new_section.save()
