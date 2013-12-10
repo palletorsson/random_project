@@ -29,11 +29,14 @@
 }
 
 .timeline_label {
-	height:300px;
+	height:800px;
 	width:2540px;
+	background-image:url('/media/media/grid-background-to-repeat-250-px-high.jpg');
+    background-repeat:repeat;
+
 }
 .timeline_media {
-	height:400px;
+	
 	width:2540px;
 }
 
@@ -53,15 +56,18 @@
 }
 
 .timeline_img  {
-    width:180px;
-    margin:20px;
+    width:200px;
+    margin:2px;
     position:relative;
-    left:-100px;
+    left:-40px;
     border: 1px solid pink;
+    opacity:0.8;
 }
+
 .line {
     width:2px;
     background-color: #5cb85c;
     white-space: nowrap;
     border-radius: .25em;
 }
+
