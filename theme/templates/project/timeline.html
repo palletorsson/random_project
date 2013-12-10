@@ -75,7 +75,7 @@
 
         {% for p in posts %}
 
-        <div class="label label-success" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:20px;">{{ p.title }} <div class="timeline_line"></div></div>
+        <div class="label label-success" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:20px;"><span class="label label-primary">{{ p.title }}</span> <div class="timeline_line"></div></div>
         <div class="" style="display:block;position:relative;top:100px;left:{{ p.days_ago }}px;width:{{ p.duration }}px;height:30px;"><a href="/project/{{ p.slug }}/"> <div><img class="timeline_img" src="{% version p.image 'medium' %}"  alt="{{ p.slug }}" /></div></a></div>
 
         {% endfor %}
