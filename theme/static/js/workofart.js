@@ -78,7 +78,7 @@ WORKOFART.Related = function (value) {
 
 
 
-var postId = $('#post_id').text();
+// var postId =  $('#post_id').text();
 
 if (postId) {
 	$.get("http://127.0.0.1:8000/api/related/?format=json&post="+postId, function( data ) {
