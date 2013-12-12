@@ -10,6 +10,7 @@ from django.db.models import Q
 
 def index(request):
     posts = Post.objects.filter(active=True)
+
     return render_to_response('posts/index.html', {
         'posts': posts,
     }, context_instance=RequestContext(request))
@@ -19,7 +20,6 @@ def detail(request, slug):
     sections = Section.objects.filter(post=post).reverse()
 
     related = Related.objects.filter(section=post)
-
 
     return render_to_response('posts/detail.html', {
         'post': post,
