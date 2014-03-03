@@ -6,7 +6,7 @@ class ImageCollection(models.Model):
     slug = models.SlugField()
     is_active = models.BooleanField(default=True)
     created_date = models.DateTimeField(auto_now_add=True)
-    feature_image = FileBrowseField("Image", max_length=200, directory="images/", extensions=[".jpg"], blank=True, null=True)
+    feature_image = FileBrowseField("Image", max_length=200, directory="images/", extensions=[".jpg, .png"], blank=True, null=True)
 
     def __unicode__(self):
         return unicode(self.name)
