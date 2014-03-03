@@ -26,17 +26,35 @@
 
 			{% for project in projects %}
 			<div class="homework">
-					<a href="/project/{{ project.slug }}">
-					<img src="{% version project.image 'medium' %}"  alt="{{ project.slug }}" />
-				<div class="homeworktext ">								
-						<h4> <span class="glyphicon glyphicon-file"></span> {{ project.title }} </h4>
-						</a>
-			
-						<div class="data"><small> Last update:  {{ project.publish_at }}</small></div>
-						<div class="type"> In: <a href="/posts/type/{{ post.type }}/">{{ project.type }}</a>   </div>
-                        <div class="process"> Process: {{ project.process }} </div>
-                        <div class="progress progress-striped active">   <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{ project.process_procent }}" aria-valuemin="0" aria-valuemax="98" style="width:{{ project.process_procent }}%"></div>
+                    <div class="front-page_images">
+                        <a href="/project/{{ project.slug }}">
+                            <img src="{% version project.image 'medium' %}"  alt="{{ project.slug }}" />
+
+                            <div class="process pull-right"> Process: {{ project.process }} </div>
+                        </a>
+                    </div>
+				<div class="homeworktext ">
+
+                    <a href="/project/{{ project.slug }}">
+						<h4> <span class="glyphicon glyphicon-folder-close"></span> {{ project.title }} </h4>
+
+                        </a>
+                        <div class="project_posts" id="posts_{{project.pk}}">
+
+                        {% if project.posts %}
+                            {% for post in project.posts.all %}
+                                <span class="glyphicon glyphicon-file"></span><a href="/posts/{{ post.slug }}/"> {{ post.title }} ( read ) </a> </blockquote>
+                            {% endfor %}
+                        {% endif %}
                         </div>
+
+
+
+                        <div class="type"> In: <a href="/posts/type/{{ post.type }}/">{{ project.type }}</a>   </div>
+                        <div class="data"> <small> Last update:  {{ project.publish_at }}</small></div>
+						<div class="progress progress-striped active">   <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{ project.process_procent }}" aria-valuemin="0" aria-valuemax="98" style="width:{{ project.process_procent }}%"></div>
+
+                         </div>
 			    </div>
 
 	        </div>

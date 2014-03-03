@@ -143,12 +143,28 @@ footer img {
 .progress {
     height:10px;
     margin-right:6px;
-}
+    background-color:pink;
 
+}
+.data {
+padding-bottom:10px;
+}
 .process {
-    margin-bottom:10px;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    background-color: white;
+    filter: alpha(opacity=70);  /* IE 5-7 */
+    -moz-opacity: 0.8;          /* Netscape */
+    -khtml-opacity: 0.8;        /* Safari 1.x */
+    opacity: 0.8;               /* Good browsers */
+    padding: 4px;            /* Good browsers */
+
 }
 
+.front-page_images {
+    position:relative;
+}
 
 .section_body {
     padding-top:20px;
