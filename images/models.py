@@ -6,7 +6,7 @@ class ImageCollection(models.Model):
     slug = models.SlugField()
     is_active = models.BooleanField(default=True)
     created_date = models.DateTimeField(auto_now_add=True)
-    feature_image = FileBrowseField("Image", max_length=200, directory="images/", extensions=[".jpg, .png"], blank=True, null=True)
+    feature_image = FileBrowseField("Image", max_length=200, directory="images/", extensions=['.jpg','.jpeg','.gif','.png'], blank=True, null=True)
 
     def __unicode__(self):
         return unicode(self.name)
@@ -22,7 +22,7 @@ class Photographer(models.Model):
 
 class Image(models.Model):
     name= models.CharField(max_length=255, default=" ",)
-    image = FileBrowseField("Image", max_length=200, directory="images/", extensions=[".jpg, .png"], blank=True, null=True)
+    image = FileBrowseField("Image", max_length=200, directory="images/", extensions=['.jpg','.jpeg','.gif','.png'], blank=True, null=True)
     photographer = models.ForeignKey(Photographer, blank=True, null=True)
     image_collection = models.ForeignKey(ImageCollection, blank=True, null=True)
     order = models.IntegerField(blank=True, null=True)
