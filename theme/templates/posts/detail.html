@@ -98,8 +98,19 @@
                 {% endfor %}
 
                  </div>
-                <h3 class="tag_title"> Footnotes for {{ post.type }}: {{ post.title }}</h3>
+
+                {% if post.credits %}
+                    <div>
+                    {{ post.credits }}
+                       </div>
+                     {% endif %}
+
+
+                {% if related.footnote %}
+                <h3 class="tag_title">
+                       Footnotes for {{ post.type }}: {{ post.title }}</h3>
                 <div class="footnote">
+                {% endif %}
 
                 </div>
                 <div class="hidden" id="tagclould"> {{ post.gen_tags }}</div>
